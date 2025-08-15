@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Your Company Documentation",
+  "name": "Sustainly Documentation",
   "colors": {
     "primary": "#3B82F6",
     "light": "#60A5FA",
     "dark": "#1D4ED8"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
@@ -70,37 +70,37 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://docs.yourcompany.com",
+          "href": "https://docs.sustainly.com",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://community.yourcompany.com",
+          "href": "https://community.sustainly.com",
           "icon": "slack"
         },
         {
           "anchor": "Blog",
-          "href": "https://blog.yourcompany.com",
+          "href": "https://blog.sustainly.com",
           "icon": "newspaper"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/SustainlyLogo_Full_Purple.png",
+    "dark": "/SustainlyLogo_Full_Purple.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@yourcompany.com"
+        "href": "mailto:support@sustainly.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.yourcompany.com"
+      "href": "https://dashboard.sustainly.com"
     }
   },
   "contextual": {
@@ -117,25 +117,25 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/yourcompany",
-      "github": "https://github.com/yourcompany",
-      "linkedin": "https://linkedin.com/company/yourcompany"
+      "x": "https://x.com/sustainly",
+      "github": "https://github.com/sustainly",
+      "linkedin": "https://linkedin.com/company/sustainly"
     }
   },
   "metadata": {
     "title": {
-      "default": "Your Company Documentation",
-      "template": "%s | Your Company Docs"
+      "default": "Sustainly Documentation",
+      "template": "%s | Sustainly Docs"
     },
-    "description": "Comprehensive documentation for Your Company products and services. Find guides, tutorials, and best practices to help you succeed.",
+    "description": "Comprehensive documentation for Sustainly platform. Find guides, tutorials, and best practices to help you succeed with sustainability management.",
     "openGraph": {
       "image": "/images/og-image.png",
-      "imageAlt": "Your Company Documentation"
+      "imageAlt": "Sustainly Documentation"
     },
     "twitter": {
       "image": "/images/twitter-image.png",
-      "imageAlt": "Your Company Documentation"
+      "imageAlt": "Sustainly Documentation"
     },
-    "canonical": "https://docs.yourcompany.com"
+    "canonical": "https://docs.sustainly.com"
   }
 }
