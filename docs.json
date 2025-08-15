@@ -27,7 +27,6 @@
           {
             "group": "Quick start",
             "pages": [
-              "index",
               "getting-started/installation-guide"
             ]
           }
