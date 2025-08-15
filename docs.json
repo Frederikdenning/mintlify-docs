@@ -16,9 +16,7 @@
           {
             "group": "Legal & Compliance",
             "pages": [
-              "lcas-for-beginners/legal-compliance-overview",
-              "lcas-for-beginners/regulatory-requirements",
-              "lcas-for-beginners/compliance-checklist"
+              "lcas-for-beginners/legal-compliance-overview"
             ]
           }
         ]
@@ -30,9 +28,7 @@
             "group": "Quick start",
             "pages": [
               "index",
-              "getting-started/installation-guide",
-              "getting-started/first-steps",
-              "getting-started/account-setup"
+              "getting-started/installation-guide"
             ]
           }
         ]
@@ -43,9 +39,7 @@
           {
             "group": "Step-by-step guides",
             "pages": [
-              "tutorials/basic-workflow",
-              "tutorials/advanced-features",
-              "tutorials/troubleshooting-guide"
+              "tutorials/basic-workflow"
             ]
           }
         ]
@@ -56,9 +50,7 @@
           {
             "group": "Core features",
             "pages": [
-              "features/feature-overview",
-              "features/user-interface",
-              "features/integrations"
+              "features/feature-overview"
             ]
           }
         ]
@@ -69,9 +61,7 @@
           {
             "group": "Best practices",
             "pages": [
-              "articles/best-practices-guide",
-              "articles/performance-optimization",
-              "articles/security-considerations"
+              "articles/best-practices-guide"
             ]
           }
         ]
