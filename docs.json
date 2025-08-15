@@ -16,7 +16,8 @@
           {
             "group": "Legal & Compliance",
             "pages": [
-              "lcas-for-beginners/legal-compliance-overview"
+              "lcas-for-beginners/legal-compliance-overview",
+              "introduction"
             ]
           }
         ]
