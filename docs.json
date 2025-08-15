@@ -87,8 +87,8 @@
     }
   },
   "logo": {
-    "light": "/logo/SustainlyLogo_Full_Purple.png",
-    "dark": "/logo/SustainlyLogo_Full_Purple.png"
+    "light": "/logo/SustainlyLogo_light.png",
+    "dark": "/logo/SustainlyLogo_dark.png"
   },
   "navbar": {
     "links": [
