@@ -1,68 +1,77 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Your Company Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3B82F6",
+    "light": "#60A5FA",
+    "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "LCAs for beginner's",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Legal & Compliance",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "lcas-for-beginners/legal-compliance-overview",
+              "lcas-for-beginners/regulatory-requirements",
+              "lcas-for-beginners/compliance-checklist"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Getting started",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Quick start",
             "pages": [
-              "api-reference/introduction"
+              "index",
+              "getting-started/installation-guide",
+              "getting-started/first-steps",
+              "getting-started/account-setup"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Tutorials",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Step-by-step guides",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "tutorials/basic-workflow",
+              "tutorials/advanced-features",
+              "tutorials/troubleshooting-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Core features",
+            "pages": [
+              "features/feature-overview",
+              "features/user-interface",
+              "features/integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Articles",
+        "groups": [
+          {
+            "group": "Best practices",
+            "pages": [
+              "articles/best-practices-guide",
+              "articles/performance-optimization",
+              "articles/security-considerations"
             ]
           }
         ]
@@ -72,17 +81,17 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.yourcompany.com",
           "icon": "book-open-cover"
         },
         {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "href": "https://community.yourcompany.com",
           "icon": "slack"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://blog.yourcompany.com",
           "icon": "newspaper"
         }
       ]
@@ -96,13 +105,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@yourcompany.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.yourcompany.com"
     }
   },
   "contextual": {
@@ -119,9 +128,25 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/yourcompany",
+      "github": "https://github.com/yourcompany",
+      "linkedin": "https://linkedin.com/company/yourcompany"
     }
+  },
+  "metadata": {
+    "title": {
+      "default": "Your Company Documentation",
+      "template": "%s | Your Company Docs"
+    },
+    "description": "Comprehensive documentation for Your Company products and services. Find guides, tutorials, and best practices to help you succeed.",
+    "openGraph": {
+      "image": "/images/og-image.png",
+      "imageAlt": "Your Company Documentation"
+    },
+    "twitter": {
+      "image": "/images/twitter-image.png",
+      "imageAlt": "Your Company Documentation"
+    },
+    "canonical": "https://docs.yourcompany.com"
   }
 }
