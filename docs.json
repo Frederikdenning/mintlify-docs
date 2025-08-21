@@ -16,10 +16,10 @@
           {
             "group": "Legal & Compliance",
             "pages": [
-              "lcas-for-beginners/legal-compliance-overview",
                "lcas-for-beginners/introduction",
               "lcas-for-beginners/lca-vs-co2",
-              "lcas-for-beginners/addvalue"
+              "lcas-for-beginners/addvalue",
+              "lcas-for-beginners/standards"
             ]
           }
         ]
