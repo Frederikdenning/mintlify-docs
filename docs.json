@@ -11,6 +11,26 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Best LCAs on the market",
+        "groups": [
+          {
+            "group": "Sustainability Tools & Best Practices",
+            "pages": [
+              "lca-comparison/1.introduction",
+              "lca-comparison/2.lcas",
+              "lca-comparison/3.key-criteria",
+              "lca-comparison/4.market-comparison",
+              "lca-comparison/5.collect-data",
+              "lca-comparison/6.implement-software",
+              "lca-comparison/7.faq",
+              "lca-comparison/8.future",
+              "lca-comparison/9.final-thoughts"
+            ]
+          }
+        ]
+      },
+
+      {
         "tab": "LCAs for beginner's",
         "groups": [
           {
