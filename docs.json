@@ -1,5 +1,5 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "$schema": "https://mintlify.com/schema.json",
   "theme": "mint",
   "name": "Sustainly Documentation",
   "colors": {
@@ -27,14 +27,13 @@
           }
         ]
       },
-
       {
         "tab": "LCAs for beginner's",
         "groups": [
           {
             "group": "Legal & Compliance",
             "pages": [
-               "lcas-for-beginners/introduction",
+              "lcas-for-beginners/introduction",
               "lcas-for-beginners/lca-vs-co2",
               "lcas-for-beginners/addvalue",
               "lcas-for-beginners/standards",
@@ -44,50 +43,6 @@
               "lcas-for-beginners/database",
               "lcas-for-beginners/getting",
               "lcas-for-beginners/thesaurus"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Getting started",
-        "groups": [
-          {
-            "group": "Quick start",
-            "pages": [
-              "getting-started/installation-guide"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Tutorials",
-        "groups": [
-          {
-            "group": "Step-by-step guides",
-            "pages": [
-              "tutorials/basic-workflow"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Features",
-        "groups": [
-          {
-            "group": "Core features",
-            "pages": [
-              "features/feature-overview"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Articles",
-        "groups": [
-          {
-            "group": "Best practices",
-            "pages": [
-              "articles/best-practices-guide"
             ]
           }
         ]
@@ -133,15 +88,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
