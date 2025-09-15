@@ -14,7 +14,7 @@
         "tab": "LCA Software",
         "groups": [
           {
-            "group": "Sustainability Tools & Best Practices",
+            "group": "lca-comparison",
             "pages": [
               "lca-comparison/1.introduction",
               "lca-comparison/2.lcas",
