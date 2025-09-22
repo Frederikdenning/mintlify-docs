@@ -59,11 +59,6 @@
           "anchor": "Community",
           "href": "https://community.sustainly.com",
           "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://blog.sustainly.com",
-          "icon": "newspaper"
         }
       ]
     }
