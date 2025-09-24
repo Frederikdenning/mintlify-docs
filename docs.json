@@ -9,7 +9,7 @@
   },
   "favicon": "/favicon.ico",
   "navigation": {
-    "tabs": [
+      "tabs": [
       {
         "tab": "LCA Software",
         "groups": [
@@ -43,6 +43,19 @@
               "lcas-for-beginners/database",
               "lcas-for-beginners/getting",
               "lcas-for-beginners/thesaurus"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tutorials",
+        "groups": [
+          {
+            "group": "Step-by-Step Guides",
+            "pages": [
+              "tutorials/getting-started",
+              "tutorials/advanced-tips",
+              "tutorials/case-studies"
             ]
           }
         ]
