@@ -46,30 +46,13 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Tutorial",
-        "groups": [
-          {
-            "group": "Sustainability Tools & Best Practices",
-            "pages": [
-              "lca-comparison/1.introduction",
-              "lca-comparison/2.lcas",
-              "lca-comparison/3.key-criteria",
-              "lca-comparison/4.market-comparison",
-              "lca-comparison/5.collect-data",
-              "lca-comparison/6.faq",
-              "lca-comparison/7.conclusion"
-            ]
-          }
-        ]
       }
     ],
     "global": {
       "anchors": [
         {
           "anchor": "Tutorials",
-          "href": "https://docs.sustainly.com",
+          "href": "https://learn.sustainly.ai/lcas-for-beginners/introduction",
           "icon": "book-open-cover"
         },
         {
