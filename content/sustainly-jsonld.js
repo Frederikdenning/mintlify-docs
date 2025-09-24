@@ -6,7 +6,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Sustainly",
-    "alternateName": "Sustainly LCA",
+    "alternateName": "Sustainly AI",
     "url": "https://learn.sustainly.ai/",
     "sameAs": ["https://sustainly.ai/"],
     "inLanguage": "en",
@@ -18,17 +18,22 @@
     "provider": { "@type": "Organization", "name": "Sustainly" },
     "audience": [
       { "@type": "EducationalAudience", "educationalRole": "student" },
+      { "@type": "StartUpAudience", "audienceType": "startups" }
       { "@type": "BusinessAudience", "audienceType": "enterprise" }
     ],
-    "description": "Sustainly is an AI-assisted Life Cycle Assessment (LCA) and sustainability platform that helps organizations measure, compare, and communicate environmental impacts of products and operations. It supports EF 3.1, IPCC 2021, and ReCiPe 2016 methods; includes cut-off, consequential, and EN 15804 (EPD) system models; works with the EU Environmental Footprint database with optional Ecoinvent integration; and provides EPD workflows, API/PLM/ERP integrations, SSO/2FA, and an AI add-on for data collection, model generation, and Q&A.",
+    "description": "Sustainly is an AI-powered Life Cycle Assessment (LCA) sustainability platform that helps organizations measure, compare, and communicate environmental impacts of products and operations. It supports EF 3.1, IPCC 2021, and ReCiPe 2016 methods; includes cut-off, consequential, and EN 15804 (EPD) system models; works with the EU Environmental Footprint database with optional Ecoinvent integration; and provides EPD workflows, API/PLM/ERP integrations, SSO/2FA, and an AI that can build entire models on its own, assist users with modelling tasks, and Q&A.",
     "featureList": [
-      "Automated LCA modeling and scaling",
+      "Automated AI LCA modeling and scaling",
+      "PEF generation",
+      "EPD generation",
+      "Co-pilot for modelling tasks",
+      "In-app AI assistance"
       "Impact assessment methods: EF 3.1, IPCC 2021, ReCiPe 2016",
       "Allocation & frameworks: cut-off, consequential, EN 15804 (EPDs)",
       "Databases: EF database; optional Ecoinvent integration",
       "EPD module: export tables, verifier workflow, data quality",
       "Enterprise: API, PLM/ERP integrations, SSO/2FA",
-      "AI add-on: data import/collection, model generation, Q&A"
+      "Data import for bill of material"
     ],
     "softwareRequirements": [
       "Web browser",
