@@ -43,6 +43,28 @@
         ]
       },
       {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Platform Features",
+            "pages": [
+              "3.Features/Features"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tutorials",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "4.Tutorials/1.Placeholder"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "LCA Software",
         "groups": [
           {
