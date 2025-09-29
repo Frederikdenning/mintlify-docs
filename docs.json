@@ -26,7 +26,7 @@
         "tab": "LCAs for beginner's",
         "groups": [
           {
-            "group": "Legal & Compliance",
+            "group": "LCA Knowledge",
             "pages": [
               "2.LCA-Guideline/introduction",
               "2.LCA-Guideline/lca-vs-co2",
@@ -48,13 +48,13 @@
           {
             "group": "Sustainability Tools & Best Practices",
             "pages": [
-              "5.articles/lca-comparison/1.introduction",
-              "5.articles/lca-comparison/2.lcas",
-              "5.articles/lca-comparison/3.key-criteria",
-              "5.articles/lca-comparison/4.market-comparison",
-              "5.articles/lca-comparison/5.collect-data",
-              "5.articles/lca-comparison/6.faq",
-              "5.articles/lca-comparison/7.conclusion"
+              "5.Articles/lca-comparison/1.introduction",
+              "5.Articles/lca-comparison/2.lcas",
+              "5.Articles/lca-comparison/3.key-criteria",
+              "5.Articles/lca-comparison/4.market-comparison",
+              "5.Articles/lca-comparison/5.collect-data",
+              "5.Aticles/lca-comparison/6.faq",
+              "5.Articles/lca-comparison/7.conclusion"
             ]
           }
         ]
