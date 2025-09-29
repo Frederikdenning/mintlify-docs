@@ -48,13 +48,13 @@
           {
             "group": "Sustainability Tools & Best Practices",
             "pages": [
-              "lca-comparison/1.introduction",
-              "lca-comparison/2.lcas",
-              "lca-comparison/3.key-criteria",
-              "lca-comparison/4.market-comparison",
-              "lca-comparison/5.collect-data",
-              "lca-comparison/6.faq",
-              "lca-comparison/7.conclusion"
+              "5.articles/lca-comparison/1.introduction",
+              "5.articles/lca-comparison/2.lcas",
+              "5.articles/lca-comparison/3.key-criteria",
+              "5.articles/lca-comparison/4.market-comparison",
+              "5.articles/lca-comparison/5.collect-data",
+              "5.articles/lca-comparison/6.faq",
+              "5.articles/lca-comparison/7.conclusion"
             ]
           }
         ]
