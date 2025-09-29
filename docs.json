@@ -9,7 +9,7 @@
   },
   "favicon": "/favicon.ico",
   "navigation": {
-      "tabs": [
+    "tabs": [
       {
         "tab": "LCA Software",
         "groups": [
@@ -46,28 +46,10 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Tutorials",
-        "groups": [
-          {
-            "group": "Step-by-Step Guides",
-            "pages": [
-              "tutorials/getting-started",
-              "tutorials/advanced-tips",
-              "tutorials/case-studies"
-            ]
-          }
-        ]
       }
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Tutorials",
-          "href": "https://learn.sustainly.ai/lcas-for-beginners/introduction",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Community",
           "href": "https://join.slack.com/t/sustainlycommunity/shared_invite/zt-1yk5m78k3-uoXtBB5FurdLyIH0TDvU8A",
@@ -130,3 +112,4 @@
     "canonical": "https://docs.sustainly.com"
   }
 }
+
