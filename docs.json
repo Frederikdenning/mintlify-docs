@@ -1,7 +1,8 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
+  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Sustainly Learning Page",
+  "description": "Comprehensive documentation for the Sustainly platform. Find guides and best practices to help you succeed with sustainability management.",
   "colors": {
     "primary": "#3B82F6",
     "light": "#60A5FA",
@@ -11,18 +12,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "LCA Software",
+        "tab": "Navigation",
         "groups": [
           {
-            "group": "Sustainability Tools & Best Practices",
+            "group": "Introduction",
             "pages": [
-              "lca-comparison/1.introduction",
-              "lca-comparison/2.lcas",
-              "lca-comparison/3.key-criteria",
-              "lca-comparison/4.market-comparison",
-              "lca-comparison/5.collect-data",
-              "lca-comparison/6.faq",
-              "lca-comparison/7.conclusion"
+              "1.Introduction/Intro"
             ]
           }
         ]
@@ -43,6 +38,23 @@
               "2.LCA-Guideline/database",
               "2.LCA-Guideline/getting",
               "2.LCA-Guideline/thesaurus"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "LCA Software",
+        "groups": [
+          {
+            "group": "Sustainability Tools & Best Practices",
+            "pages": [
+              "lca-comparison/1.introduction",
+              "lca-comparison/2.lcas",
+              "lca-comparison/3.key-criteria",
+              "lca-comparison/4.market-comparison",
+              "lca-comparison/5.collect-data",
+              "lca-comparison/6.faq",
+              "lca-comparison/7.conclusion"
             ]
           }
         ]
@@ -95,20 +107,14 @@
       "linkedin": "https://linkedin.com/company/sustainly"
     }
   },
-  "metadata": {
-    "title": {
-      "default": "Sustainly Documentation",
-      "template": "%s | Sustainly Docs"
-    },
-    "description": "Comprehensive documentation for the Sustainly platform. Find guides and best practices to help you succeed with sustainability management.",
-    "openGraph": {
-      "image": "/images/og-image.png",
-      "imageAlt": "Sustainly Documentation"
-    },
-    "twitter": {
-      "image": "/images/twitter-image.png",
-      "imageAlt": "Sustainly Documentation"
-    },
-    "canonical": "https://docs.sustainly.com"
+  "seo": {
+    "metatags": {
+      "description": "Comprehensive documentation for the Sustainly platform. Find guides and best practices to help you succeed with sustainability management.",
+      "og:image": "/images/og-image.png",
+      "og:image:alt": "Sustainly Documentation",
+      "twitter:image": "/images/twitter-image.png",
+      "twitter:image:alt": "Sustainly Documentation",
+      "canonical": "https://docs.sustainly.com"
+    }
   }
 }
