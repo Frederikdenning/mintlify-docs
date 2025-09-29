@@ -100,7 +100,7 @@
       "default": "Sustainly Documentation",
       "template": "%s | Sustainly Docs"
     },
-    "description": "Comprehensive documentation for Sustainly platform. Find guides, tutorials, and best practices to help you succeed with sustainability management.",
+    "description": "Comprehensive documentation for the Sustainly platform. Find guides and best practices to help you succeed with sustainability management.",
     "openGraph": {
       "image": "/images/og-image.png",
       "imageAlt": "Sustainly Documentation"
@@ -112,4 +112,3 @@
     "canonical": "https://docs.sustainly.com"
   }
 }
-
