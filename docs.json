@@ -33,16 +33,16 @@
           {
             "group": "Legal & Compliance",
             "pages": [
-              "lcas-for-beginners/introduction",
-              "lcas-for-beginners/lca-vs-co2",
-              "lcas-for-beginners/addvalue",
-              "lcas-for-beginners/standards",
-              "lcas-for-beginners/methods",
-              "lcas-for-beginners/impact",
-              "lcas-for-beginners/units",
-              "lcas-for-beginners/database",
-              "lcas-for-beginners/getting",
-              "lcas-for-beginners/thesaurus"
+              "2.LCA-Guideline/introduction",
+              "2.LCA-Guideline/lca-vs-co2",
+              "2.LCA-Guideline/addvalue",
+              "2.LCA-Guideline/standards",
+              "2.LCA-Guideline/methods",
+              "2.LCA-Guideline/impact",
+              "2.LCA-Guideline/units",
+              "2.LCA-Guideline/database",
+              "2.LCA-Guideline/getting",
+              "2.LCA-Guideline/thesaurus"
             ]
           }
         ]
@@ -59,8 +59,8 @@
     }
   },
   "logo": {
-    "light": "/logo/SustainlyLogo_dark.png",
-    "dark": "/logo/SustainlyLogo_light.png",
+    "light": "/images/SustainlyLogo_dark.png",
+    "dark": "/images/SustainlyLogo_light.png",
     "href": "https://sustainly.ai/"
   },
   "navbar": {
