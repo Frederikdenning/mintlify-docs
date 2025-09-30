@@ -1,33 +1,35 @@
 ---
-title: "Building your first model in Sustainly"
-description: "This page introduces a quick start of Sustainly, by using a simple example of a single-use Paper cup, from the raw material extraction to the end-of-life disposal, what is the overall environmental impact of it from the whole life cycle."
+title: "Building your first model with Sustainly"
+description: "This page introduces a quick start of Sustainly, by using a simple example of a reusable plastic cup, from the raw material extraction to the end-of-life disposal, what is the overall environmental impact of it from the whole life cycle."
 ---
 
 # Overview
 
-This chapter will guide you through building a foundational Life Cycle Assessment (LCA) model for **a single-use paper cup** within Sustainly.
+This chapter will guide you through building a comprehensive Life Cycle Assessment (LCA) model for a **reusable polypropylene (PP) plastic cup** within the Sustainly software. This analysis is critical for accurately modeling products where the **reuse-phase (washing)** is a major environmental determinant.
 
 Upon completion of this tutorial, you will be proficient in:
 
-- **Constructing a simple LCA model powered by AI**, encompassing all stages from raw material extraction to end-of-life disposal.
+- **Constructing a complete LCA model** for a product, covering all stages from raw material extraction to end-of-life disposal.
+- **Refining and verifying** the AI-generated model to ensure process and boundary accuracy.
+- **Testing the sensitivity of the overall environmental impact** to variations in the number of reuses.
 
 # **Project Goal & Scope**
 
 Before we begin modeling, let's clearly define the parameters of our analysis. This precision is critical for a valid comparison.
 
-**Goal:** To systematically compare the environmental impacts of a single-use paper cup and a reusable plastic cup across their entire life cycles.
+**Goal:** To quantify the environmental impacts of a **reusable polypropylene (PP) plastic cup** across its entire life cycle, and to analyze how the reuse cycles influences the total environmental impact.
 
 **Functional Unit:** Serving one medium hot drink (340 ml).
 
 **System Boundaries:** **Cradle-to-Grave**. This includes every stage from initial raw material extraction to final disposal.
 
-| **Geographic Region**        | **Paper Cup**            | **Plastic Cup** |
-| :--------------------------- | :----------------------- | :-------------- |
-| **Material**                 | paper cup, lined with PE | PP cup          |
-| **Number of uses**           | 1                        | 500             |
-| **Weight per container (g)** | 12                       | 49              |
-| **Capacity (ml)**            | 340                      | 340             |
-| **End-of-life assumptions**  | Landfill                 | Dishwashing     |
+| **Reusable Plastic Cup**     | Scenario 1                                                | Scenario 2 | Scenario 2 |
+| :--------------------------: | :-------------------------------------------------------: | :--------: | :--------: |
+| **Material**                 | PP                                                        | -          | -          |
+| **Number of uses**           | 500                                                       | 250        | 50         |
+| **Weight per container (g)** | 49                                                        | -          | -          |
+| **Capacity (ml)**            | 340                                                       | -          | -          |
+| **End-of-life assumptions**  | Dishwashing (reuse-phase), subsequent Landfill (disposal) | -          | -          |
 
 ---
 
@@ -40,14 +42,12 @@ This section outlines the precise steps for building the LCA model within Sustai
 - Navigate to the **Products** panel in Sustainly.
 - Click the **"Add product"** button.
 - Enter the following project details:
-  - **Product Name:** Paper cup vs. Plastic cup
+  - **Product Name:** Reusable PP Cup
   - **Product ID:** `tutorial-1`
   - **Database:** The Environmental Footprint Database
   - **Methodology:** EF v3.1
 
-![image.png](/images/image.png)
-
-![image.png](/images/image.png)
+![Screenshot 2025-09-30 at 13.33.57.png](/images/Screenshot2025-09-30at13.33.57.png)
 
 ### 2. **Model Creation with AI Assistance**
 
@@ -56,55 +56,70 @@ Sustainly's AI agent can streamline the initial modeling process.
 - Click the **"Open AI agent"** button on the options bar. This will take you to the chat interface.
 - Enter the following prompt to generate the initial model:
 
-  > "Create an LCA model for a single-use paper cup, designed to carry a 340ml hot beverage. The raw materials, including 12g of paper and 3g of PE lining, are sourced from Poland. The cup is manufactured, used, and landfilled in Denmark. The scope should be from cradle-to-grave."
+  > "Create an LCA model for a reusable PP cup, designed to carry a 340ml hot beverage. The raw materials, including 49g of polypropylene, are sourced from Germany. The cup is manufactured, used, washed, and landfilled in Denmark. The scope should be cradle-to-grave."
 
-The AI will generate a complete LCA model based on this information. However, while AI accelerates the process, it is essential to verify the accuracy of the assigned activities. We will now refine the model.
+The AI will generate a complete LCA model based on this information. 
+
+![Screenshot 2025-09-30 at 12.04.27.png](/images/Screenshot2025-09-30at12.04.27.png)
 
 ### 3. **Refining the Model: Verification & Modification**
 
-Ensuring the accuracy of your model's nodes and activities is a critical step.
+While AI accelerates the process, it is essential to verify the accuracy of the assigned activities. We will now refine the model by ensuring the accuracy of your model's nodes and activities.
 
-### **3.1 Manual Modification**
+### **3.1 Reselect the activity in the node**
 
-- In the **Raw Materials** stage, locate the **"Paper"** node. The AI may have assigned a generic activity like `unbleached kraft pulp, hardwood, blackbox (WORLD (WITHOUT EU+EFTA+UK, US AND CA))`.
-- This activity is not geographically specific enough for our model. Manually change it to the more suitable activity: `unbleached kraft pulp, hardwood (EU+EFTA+UK)`.
+- In the **Raw Materials** stage, locate the **"Polypropylene"** node. The AI has assigned a generic activity like `polypropylene production, granulate (RoW, Rest of World).`
+- This activity is not geographically specific enough for our model. Manually change it to the more suitable activity: `polypropylene production, granulate (RER, Europe)`.
 
-### **3.2 AI-Assisted Iteration**
+![Screenshot 2025-09-30 at 13.55.22.png](/images/Screenshot2025-09-30at13.55.22.png)
 
-- You can also ask the AI agent to suggest a more suitable activity for a specific node.
-- Continue refining the model until you are satisfied with the chosen activities. For a comprehensive overview, switch to the **List View**.
+### **3.2 Delete the redundant node**
 
-## **4. Viewing the Results**
+- In the **Use** stage, locate the **"Washing wastewater"** node. The AI has assigned an activity like `Polypropylene, recycled, pre-consumer.`
+- This activity is not necessary for our model. Manually delete this node
+
+![Screenshot 2025-09-30 at 14.02.09.png](/images/Screenshot2025-09-30at14.02.09.png)
+
+![Screenshot 2025-09-30 at 14.03.58.png](/images/Screenshot2025-09-30at14.03.58.png)
+
+### **3.3 Specify the amount input in the nodes by adding a global parameter**
+
+- Since this Polypropylene (PP) cup is designed for repeated use, the environmental burden of the **raw material, manufacturing, and end-of-life disposal** must be allocated across its total number of cycles.
+- To define a global parameter:
+  1. Navigate to the **List View**.
+  2. Select **Parameters** and click **"Add node"**
+  3. Name the parameter `ReuseTimes`.
+  4. Specify the value of this parameter as **500** for this initial scenario.
+
+  ![Screenshot 2025-09-30 at 14.27.20.png](/images/Screenshot2025-09-30at14.27.20.png)
+- You will then use this `ReuseTimes` parameter as the divisor for all non-use-phase inventory flows, it's easy to change the input values at once in **List view.**
+
+![Screenshot 2025-09-30 at 14.38.40.png](/images/Screenshot2025-09-30at14.38.40.png)
+
+## 4. Adding scenarios with different `reuse times`
+
+To effectively analyze the influence of the reuse factor—a key objective of this LCA—we must create multiple scenarios that vary only the `reuse times` parameter. This will visually demonstrate the environmental trade-off between production impact and usage intensity.
+
+1. **Duplicate the Model:** Return to the **Kanban View** (or the main modeling interface).
+2. Locate the top toolbar where **"Scenario 1"** is displayed.
+3. Click the scenario selector and create two new scenarios by entering the following names:
+   - **Scenario 2 - 250 Uses**
+   - **Scenario 3 - 50 Uses**
+
+   ![Screenshot 2025-09-30 at 14.41.28.png](/images/Screenshot2025-09-30at14.41.28.png)
+4. **Update Parameters:** For each new scenario, navigate back to the **List View → Parameters** and modify the value of the `reuse times` parameter:
+   - For **Scenario 2**, set `reuse times` to **250**.
+   - For **Scenario 3**, set `reuse times` to **50**.
+
+   ![Screenshot 2025-09-30 at 14.49.42.png](/images/Screenshot2025-09-30at14.49.42.png)
+
+By systematically altering only this one critical parameter, you establish a controlled experiment that precisely isolates the impact of reuse frequency on the final life cycle results.
+
+## **5. Viewing the Results**
 
 - Once the model is finalized, click the **"Result view"** button on the options bar.
 - The results dashboard will display the environmental impacts of your model from various perspectives, allowing for a detailed analysis and comparison.
 
-## 5. **Adding the Reusable Plastic Cup Scenario**
+![Screenshot 2025-09-30 at 14.51.11.png](/images/Screenshot2025-09-30at14.51.11.png)
 
-Now that we have a completed model for the paper cup, we will create a new scenario to represent the reusable plastic cup. This will allow for a direct, side-by-side comparison of their environmental impacts.
-
-### 5.1 **Model Creation with AI Assistance**
-
-We will again leverage the AI agent to expedite the modeling process for the plastic cup.
-
-- Click on the **Open AI agent** button to access the chat interface.
-- Enter the following detailed prompt:
-
-  > "Create a new scenario for a reusable plastic cup. This cup weighs 49 grams, is made of polypropylene (PP), and can be reused 500 times. It's manufactured, used, and washed in Denmark. The raw materials are transported from Poland by truck. Please add all necessary nodes for the entire life cycle, including the washing process after each use."
-
-### 5.2 **Manual Refinement: Adding Specific Nodes**
-
-While the AI can generate a robust initial model, it may not perfectly capture the nuances of a reusable product's life cycle. For our model, we must explicitly account for the energy and resources consumed during each wash cycle.
-
-- Since the AI might not have correctly identified the dishwashing process, we will add the necessary nodes manually.
-- In the **End-of-Life** stage, create three new nodes to represent the resources consumed per wash cycle:
-  - **Tap Water**
-  - **Electricity**
-  - **Detergent**
-- **Alternatively**, you can prompt the AI agent more specifically to add these nodes:
-
-  > "Please add three new nodes to the end-of-life stage for the reusable plastic cup. The nodes should represent the tap water, electricity, and detergent used for dishwashing a single PP cup."
-
-## Impact results analysis
-
-Show the impact results in result view and report view
+![Screenshot 2025-09-30 at 14.21.31.png](/images/Screenshot2025-09-30at14.21.31.png)
