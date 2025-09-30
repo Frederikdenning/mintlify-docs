@@ -59,7 +59,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "4.Tutorials/1.Placeholder"
+              "4.Tutorials/1.Placeholder",
+              "4.Tutorials/3.simple-example"
             ]
           }
         ]
