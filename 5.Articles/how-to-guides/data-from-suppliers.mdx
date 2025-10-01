@@ -1,0 +1,153 @@
+---
+title: "How To Run A Product Footprint LCA From Zero To Insight"
+description: "A step by step tutorial for students and small teams to build a credible Life Cycle Assessment, compare scenarios, and export results."
+slug: "how-to-run-a-product-footprint-lca"
+author: "Sustainly Team"
+published: true
+toc: true
+keywords:
+  - "how to conduct an LCA"
+  - "Life Cycle Assessment (LCA)"
+  - "best practices for LCA software"
+  - "affordable LCA tools"
+  - "automated tools"
+  - "regulatory compliance"
+  - "sustainable business"
+---
+This hands on guide walks you through a full Life Cycle Assessment that you can complete in one afternoon. It works for students, small businesses, and in house sustainability teams. We’ll define scope, build the inventory, select methods, model scenarios, interpret results, and export deliverables. Along the way, we highlight how **Sustainly** speeds you up with automation and student friendly access.
+
+## What You Will Achieve
+
+- A scoped LCA model with a clear functional unit
+- A populated Life Cycle Inventory using vetted databases
+- Impact results for climate and other categories
+- Two to four decision ready scenarios
+- A short interpretation with hotspots, uncertainty notes, and next steps
+- Optional EN 15804 aligned export for EPD style communication
+
+## Case Setup: Stainless Steel Bottle
+
+To make this concrete, imagine a 500 ml stainless steel bottle made in the EU and shipped to customers by truck. The company is a 10 person SME with basic supplier data. You can swap materials or transports to fit your case.
+
+**Functional unit**: one 500 ml reusable bottle used for 3 years, hand washed twice per week.\
+**System boundary**: cradle to grave (raw materials, manufacturing, packaging, distribution, use, end of life).
+
+## Step 1. Define Goal, Scope, And Assumptions
+
+1. **Goal**: reduce product climate impact and prepare credible customer communication.
+2. **Scope**: boundary = cradle to grave; geography = EU; time horizon = current year; allocation = cut off or EN 15804 if you need EPD structure.
+3. **Functional unit**: as defined above. Do not change this later.
+
+**In Sustainly**: Use the setup wizard to pick boundary, geography, allocation, and impact methods. Save as a project template for reuse.
+
+**Checklist**
+
+- Clear goal
+- Boundary chosen and justified
+- Functional unit fixed and recorded
+
+## Step 2. Build The Life Cycle Inventory (LCI)
+
+Create a bill of materials and processes:
+
+- **Materials**: 300 g stainless steel 18/8, 20 g polypropylene cap, 5 g silicone ring
+- **Energy & processes**: fabrication, assembly, finishing (supplier or database values)
+- **Packaging**: 80 g cardboard box, 5 g paper leaflet
+- **Transport**: supplier → DC 300 km by truck; DC → retailer 200 km by truck
+- **Use phase**: hand wash twice per week, warm water
+- **End of life**: 70 percent steel recycling, remaining plastics to landfill/incineration
+
+**Data sources**: start with EU Environmental Footprint; add ecoinvent later if needed.
+
+**In Sustainly**
+
+- Import a simple CSV of your BOM or add items in the UI.
+- Use AI assisted search to pick best fit background processes by region/technology.
+- Automatic unit harmonization converts grams↔kilograms and handles energy units.
+
+**Tip**: tag each line with source and date; note proxies (e.g., generic EU steel).
+
+## Step 3. Choose Impact Methods
+
+Select methods based on audience and requirements:
+
+- **IPCC 2021** for climate change
+- **EF 3.1** for a broad EU aligned category set
+- **ReCiPe 2016** if midpoint/endpoint indicators are preferred
+
+**In Sustainly**: Switch methods without rebuilding the model and compare results side by side.
+
+## Step 4. Model Scenarios
+
+Create decision focused alternatives:
+
+- **Scenario A**: baseline
+- **Scenario B**: 70 percent recycled steel content
+- **Scenario C**: switch DC→retailer transport from truck to train (200 km)
+- **Scenario D**: extend lifetime to 5 years with same washing pattern
+
+**In Sustainly**: Clone the baseline, tweak inputs, and label each scenario. Templates help you scale across similar products.
+
+## Step 5. Run LCIA And Interpret Results
+
+Generate impact results and study the charts:
+
+- Identify top hotspots (often primary steel production, sometimes transport).
+- Check sensitivity to recycled content and lifetime.
+- Confirm conversions and flows look reasonable.
+
+**Example interpretation**\
+Climate impact is dominated by stainless steel production at ~65–75 percent across scenarios. Moving to 70 percent recycled steel reduces total climate impact by ~28 percent. Lifetime extension to 5 years reduces annualized impact notably. Transport changes matter less than material choice in this case.
+
+**Uncertainty notes**
+
+- Steel grade proxy used for 18/8
+- Use phase water temperature assumed warm
+- Recycling rates based on EU averages
+
+**In Sustainly**: Use hotspot charts, contribution analysis, and the notes panel to document findings.
+
+## Step 6. Export Deliverables
+
+Choose the format your audience needs:
+
+- **Slides or charts** for internal decisions
+- **CSV or JSON** for PLM/ERP data exchange
+- **EN 15804 aligned package** if you need EPD style communication or a verifier review
+
+**In Sustainly**: Enable EN 15804 modules, export the package, and grant verifier access when required.
+
+## Common Pitfalls And Quick Fixes
+
+- **Functional unit creep** → fix it at the start and reuse across scenarios.
+- **Wrong background process** → check region and technology in dataset metadata.
+- **Unit mix ups** → convert masses to kg and distances to km before import.
+- **Single category focus** → report climate plus at least one other EF 3.1 category.
+- **No scenario analysis** → always include at least two realistic levers.
+
+## Mini Walkthrough For Students (90 minutes)
+
+1. Create a free student account in Sustainly.
+2. Start a project and run the setup wizard.
+3. Add materials/processes using EU Environmental Footprint data.
+4. Choose IPCC 2021 and EF 3.1.
+5. Clone two scenarios.
+6. Export hotspot charts and write a one page interpretation.
+
+## FAQ
+
+**How accurate should my first study be?**\
+A screening level LCA is fine for learning and early decisions. Be transparent about assumptions and improve as data arrives.
+
+**Do I need ecoinvent on day one?**\
+No. Start with EU Environmental Footprint. Add ecoinvent if your product or geography needs deeper coverage.
+
+**Can I compare two suppliers?**\
+Yes. Clone the model and swap the supplier process. Keep the functional unit and boundary identical.
+
+**What if I need an EPD later?**\
+Enable EN 15804, fill required fields, and export the aligned package. You can invite a verifier directly.
+
+## Conclusion
+
+A credible LCA does not require weeks of work. With a clear scope, vetted databases, and automation, you can go from zero to decision ready insight in a single afternoon. **Sustainly** keeps the workflow simple while supporting advanced needs like EN 15804 exports and integrations when you are ready.

@@ -1,0 +1,65 @@
+---
+title: "AI For Taxonomy & Unit Harmonization In LCA: Clean Messy Data In Minutes"
+description: "A practical playbook to standardize names, map processes, and fix units with AI so your LCA stays consistent and auditable."
+slug: "ai-lca-taxonomy-unit-harmonization"
+author: "Sustainly Team"
+published: true
+toc: true
+keywords:
+  - "AI in LCA"
+  - "data harmonization"
+  - "unit conversion"
+  - "Life Cycle Assessment (LCA)"
+  - "automated tools"
+  - "supplier data mapping"
+  - "sustainable business"
+---
+
+Messy spreadsheets kill LCA quality: “SS 18/8”, “stainless304”, and “steel austenitic” might be the same thing; kWh and MJ get mixed; distances arrive in miles. AI can standardize names, map to the right background datasets, and fix units in one pass—so you can focus on interpretation.
+
+## What To Standardize
+- **Taxonomy:** material/process names → canonical terms (e.g., “stainless steel 18/8”).  
+- **Units:** g→kg, miles→km, BTU→MJ, L→m³.  
+- **Metadata:** region, year, technology qualifiers.  
+- **Sources:** primary vs. secondary, reported vs. inferred.
+
+## 5-Step Harmonization Flow
+1) **Collect datasets** (BOM, utilities, transports, packaging).  
+2) **Detect conflicts** (duplicate names, mixed units, missing region).  
+3) **Suggest canonical terms** (AI proposes; you approve).  
+4) **Map to background datasets** with region/tech fit notes.  
+5) **Lock a dictionary** (golden mapping) and reapply on every import.
+
+**In Sustainly:** Importer profiles + AI-assisted mapping; unit harmonization runs automatically; you review exceptions.
+
+## Canonical Dictionary (Starter)
+- `stainless 18/8` → `Stainless steel, austenitic 18/8 (EU, 2024)`  
+- `cardboard` → `Paperboard, recycled content 80% (EU)`  
+- `truck med` → `Transport, freight, 16–32 t, EURO6 (EU)`
+
+Keep this file versioned (JSON/YAML) and reuse across projects.
+
+## Validation Checks To Enable
+- **Unit guardrails:** reject unknown strings; require base SI.  
+- **Range checks:** kWh/unit within 0.1–20 for process X.  
+- **Region gates:** EU-only datasets unless override.  
+- **Completeness:** no empty A-modules when EN 15804 is on.
+
+## Handling Edge Cases
+- **No exact dataset match:** choose nearest tech + add uncertainty note.  
+- **Mixed-year data:** normalize to study year or flag sensitivity.  
+- **Supplier synonyms:** add alias list so future imports auto-map.
+
+## Audit & Traceability
+- Save the **mapping report** (old → new, reason, reviewer).  
+- Store **unit conversions** (factor, source).  
+- Keep **exceptions log** for verifier review.
+
+## FAQ
+**Will AI ever map wrong?** It can—review region/technology before approving.  
+**Do I need ecoinvent?** Start with EU PEF; add ecoinvent if coverage requires.  
+**How do I keep it updated?** Version the dictionary; review quarterly.
+
+## Why Use Sustainly
+AI mapping that learns your taxonomy, automatic unit harmonization, saved profiles per supplier, EF 3.1/IPCC/ReCiPe coverage, and EN 15804-ready exports with verifier access.
+

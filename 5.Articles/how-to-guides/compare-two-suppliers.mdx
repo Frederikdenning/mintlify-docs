@@ -1,0 +1,155 @@
+---
+title: "How To Compare Two Suppliers With LCA In One Afternoon"
+description: "Step by step tutorial to run a fair supplier comparison with Life Cycle Assessment. Scope, data checklist, modeling, and decision-ready results."
+slug: "how-to-compare-suppliers-with-lca"
+author: "Sustainly Team"
+published: "true"
+toc: "true"
+keywords: ["how to conduct an LCA","supplier comparison LCA","Life Cycle Assessment (LCA)","affordable LCA tools","automated tools","sustainable business","regulatory compliance"]
+---
+
+This guide shows students, small businesses, and sustainability teams how to compare two suppliers using Life Cycle Assessment. You will define a fair scope, gather just enough data, build two comparable models, and present a clear recommendation. The workflow is simple and repeatable. Where helpful, we note how Sustainly accelerates each step with automation and templates.
+
+## What You Will Deliver
+
+- A fair and transparent scope for the comparison
+- A minimal supplier data sheet that both vendors can fill
+- Two modeled scenarios with identical functional units and boundaries
+- A one-page chart that shows the winner and the main hotspot
+- Notes on assumptions and a plan for data improvement
+
+## Step 1. Define A Fair Scope
+
+Write down the rules before you ask for data. Keep them the same for both suppliers.
+
+**Scope checklist**
+
+- Functional unit: one unit of the same product or service
+- Boundary: cradle to gate or cradle to grave (choose once and keep it fixed)
+- Geography and time: region and reporting year
+- Allocation rules: cut-off or consequential, or EN 15804 if you need EPD structure
+- Impact methods: IPCC 2021 for climate plus EF 3.1 for a wider view
+
+**In Sustainly**: Create a project template with these settings so every scenario inherits the same boundaries and methods.
+
+## Step 2. Ask For Only What You Need
+
+Send a short data sheet to both suppliers. Focus on per-unit averages.
+
+**Minimal fields**
+
+- Process/product name and code
+- Reporting year and site location
+- Electricity per unit (kWh/unit)
+- Fuels per unit (e.g., m³ gas/unit, liters diesel/unit)
+- Main material inputs per unit and yields/scrap
+- Transport in/out: distance (km) and mode
+- Packaging, if supplier controls it
+
+**Copy-ready email**
+
+> Subject: Data request for supplier comparison\
+> Hello [Name], we are comparing two suppliers for [component] using a simple environmental assessment. Please fill the attached sheet with typical **per-unit** values for your process at [site, year]. If a field isn’t tracked, leave it blank and add a note.\
+> Deadline: [date]. Thank you — [Your name]
+
+**In Sustainly**: Use the CSV importer and save a mapping profile so repeated uploads take seconds.
+
+## Step 3. Validate Before You Import
+
+**Sanity checks**
+
+- Units consistent (kg, km, kWh/MJ)
+- Values are per unit, not per batch
+- Geography and year make sense
+- Transport distances realistic for the route
+
+**Comparability checks**
+
+- Same bill of materials and packaging rules
+- Same allocation rules for scrap/by-products
+- Same use-phase and end-of-life if cradle to grave
+
+**In Sustainly**: Unit harmonization converts to a common base and flags odd values.
+
+## Step 4. Build Two Scenarios
+
+Create one baseline model and clone it. Only swap the supplier-specific parts.
+
+**Scenario setup**
+
+- Scenario A: Supplier X data mapped to background processes
+- Scenario B: Supplier Y data mapped to background processes
+- Keep all other inputs identical
+
+**In Sustainly**: Clone the model and change only the mapped supplier process or transport. Label scenarios clearly.
+
+## Step 5. Run LCIA And Compare
+
+Calculate impacts with your chosen methods.
+
+**What to look for**
+
+- Overall climate difference in percent
+- Category trade-offs from EF 3.1 (e.g., water use vs. climate)
+- Contribution analysis to see what drives the gap
+- Sensitivity to transport or recycled content
+
+**Deliverable**
+
+- One bar chart with both suppliers side-by-side for climate
+- One contribution chart showing the top hotspot for the higher result
+
+**In Sustainly**: Use comparison view to export bars and contribution charts with one click.
+
+## Step 6. Document Assumptions And Uncertainty
+
+**Template note**
+
+- Allocation: cut-off.
+- Electricity: metered; fuel: bills divided by output.
+- Material grade: proxy used where an exact dataset was unavailable.
+- Transport: typical routes validated with logistics.
+- Representativeness: 2024 production year.
+
+**In Sustainly**: Add notes at project/process level so they travel with exports and verifier packages.
+
+## Step 7. Make A Decision
+
+State the recommendation in one or two sentences, then add clear next steps.
+
+**Example**\
+Supplier X has 18 percent lower climate impact and similar results across other EF 3.1 categories. The difference is driven by electricity intensity and scrap rate. We recommend Supplier X. Next: request quarterly data refreshes and confirm transport distances.
+
+## Mini Case: Fast Packaging Supplier Comparison
+
+A student team compared two box suppliers for an ecommerce brand. Scope fixed to cradle to gate, five-field sheet, two scenarios. Supplier B showed 22 percent lower climate impact due to recycled content and shorter transport. The brand switched suppliers the same week.
+
+## Common Pitfalls And Quick Fixes
+
+- Different functional units → define once, check quantities
+- Missing transport in one scenario → add both inbound and outbound
+- Mixed years/geographies → align or flag as sensitivity
+- Only climate reported → add at least one more EF 3.1 category
+- Import mapping mistakes → reuse a saved mapping profile and spot-check lines
+
+## FAQ
+
+**Can I compare three or more suppliers at once?**\
+Yes. Add more scenarios with the same scope. Templates help avoid setup errors.
+
+**Do I need ecoinvent for this?**\
+Not necessarily. Start with EU Environmental Footprint; add ecoinvent if your product/region needs deeper coverage.
+
+**What if one supplier refuses to share data?**\
+Use a database proxy for that supplier and label it as secondary data. Note it in your decision.
+
+**Can I include price and quality too?**\
+Yes. Use a simple 2×2 chart (climate vs. price) separately from the LCA charts. Keep LCA assumptions documented.
+
+## Why Use Sustainly For Supplier Comparisons
+
+- Automation that maps columns and units fast
+- AI-assisted process selection by region and technology
+- Comparison view for side-by-side charts
+- EF 3.1, IPCC 2021, ReCiPe 2016 available without extra setup
+- EN 15804 workflow if you need EPD-style outputs later
