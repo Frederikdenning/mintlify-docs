@@ -28,12 +28,12 @@ Before we begin modeling, let's clearly define the parameters of our analysis. T
 **System Boundaries:** **Cradle-to-Grave**. This includes every stage from initial raw material extraction to final disposal.
 
 | **Reusable Plastic Cup**     | Scenario 1                                                | Scenario 2 | Scenario 3 |
-| :--------------------------: | :-------------------------------------------------------: | :--------: | :--------: |
-| **Material**                 | PP                                                        | -          | -          |
+| :--------------------------- | :-------------------------------------------------------- | :--------- | :--------- |
+| **Material**                 | PP                                                        | -ll-       | -ll-       |
 | **Number of uses**           | 500                                                       | 250        | 50         |
-| **Weight per container (g)** | 49                                                        | -          | -          |
-| **Capacity (ml)**            | 340                                                       | -          | -          |
-| **End-of-life assumptions**  | Dishwashing (reuse-phase), subsequent Landfill (disposal) | -          | -          |
+| **Weight per container (g)** | 49                                                        | -ll-       | -ll-       |
+| **Capacity (ml)**            | 340                                                       | -ll-       | -ll-       |
+| **End-of-life assumptions**  | Dishwashing (reuse-phase), subsequent Landfill (disposal) | -ll-       | -ll-       |
 
 ---
 
@@ -72,15 +72,20 @@ While AI accelerates the process, it is essential to verify the accuracy of the 
 
 ### **3.1 Reselect the activity in the node**
 
-- In the **Raw Materials** stage, locate the **"Polypropylene"** node. The AI has assigned a generic activity like `polypropylene production, granulate (RoW, Rest of World).`
-- This activity is not geographically specific enough for our model. Manually change it to the more suitable activity: `polypropylene production, granulate (RER, Europe)`.
+The AI agent efficiently assigns default activities, but your expert knowledge allows for crucial improvements in data quality.
+
+- In the **Raw Materials** stage, locate the **"Polypropylene"** node. The AI may have assigned a standard activity like _polypropylene production, granulate (RoW, Rest of World)_.
+- While this provides a starting point, there is an opportunity to improve the geographical precision of your data. Based on our scope, the **"Rest of World"** boundary is not specific enough.
+- Manually change the assigned activity to the more suitable and geographically precise activity: `polypropylene production, granulate (RER, Europe)`.
 
 ![Screenshot 2025-09-30 at 13.55.22.png](/images/Screenshot2025-09-30at13.55.22.png)
 
-### **3.2 Delete the redundant node**
+### **3.2 Delete the out of scope nodes**
 
-- In the **Use** stage, locate the **"Washing wastewater"** node. The AI has assigned an activity like `Polypropylene, recycled, pre-consumer.`
-- This activity is not necessary for our model. Manually delete this node
+When reviewing your AI-generated model, check for any nodes that may be out of scope. 
+
+- For instance, in the **Use** stage, a **"Washing wastewater"** node appears. This node is irrelevant because the impact of wastewater treatment is **already included** within the life cycle inventory data of the primary washing activity (the dishwashing node). 
+- **Manually delete this redundant node** to maintain a lean, accurate inventory and prevent double-counting of environmental burdens.
 
 ![Screenshot 2025-09-30 at 14.02.09.png](/images/Screenshot2025-09-30at14.02.09.png)
 
@@ -91,12 +96,12 @@ While AI accelerates the process, it is essential to verify the accuracy of the 
 - Since this Polypropylene (PP) cup is designed for repeated use, the environmental burden of the **raw material, manufacturing, and end-of-life disposal** must be allocated across its total number of cycles.
 - To define a global parameter:
   1. Navigate to the **List View**.
-  2. Select **Parameters** and click **"Add node"**
-  3. Name the parameter `ReuseTimes`.
+  2. Select **Parameters** and click **the plus icon in the bottom tool bar**
+  3. Name the parameter `reuse times`.
   4. Specify the value of this parameter as **500** for this initial scenario.
 
-  ![Screenshot 2025-09-30 at 14.27.20.png](/images/Screenshot2025-09-30at14.27.20.png)
-- You will then use this `ReuseTimes` parameter as the divisor for all non-use-phase inventory flows, it's easy to change the input values at once in **List view.**
+  ![image.png](/images/image.png)
+- You will then use this `reuseTimes` parameter as the divisor for all non-use-phase inventory flows, it's easy to change the input values at once in **List view.**
 
 ![Screenshot 2025-09-30 at 14.38.40.png](/images/Screenshot2025-09-30at14.38.40.png)
 
