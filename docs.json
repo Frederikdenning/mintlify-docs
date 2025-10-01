@@ -17,7 +17,11 @@
           {
             "group": "Introduction",
             "pages": [
-              "1.Introduction/Intro"
+              "1.Introduction/Intro",
+              "1.Introduction/why-sustainly",
+              "1.Introduction/who-uses-sustainly",
+              "1.Introduction/how-sustainly-works",
+              "1.Introduction/feature-comparison-matrix"
             ]
           }
         ]
