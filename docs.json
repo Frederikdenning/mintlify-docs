@@ -48,8 +48,7 @@
           {
             "group": "Platform Features",
             "pages": [
-              "3.Features/Features",
-              "3.Features/feature-comparison"
+              "3.Features/Features"
             ]
           }
         ]
@@ -71,13 +70,7 @@
           {
             "group": "Sustainability Tools & Best Practices",
             "pages": [
-              "5.Articles/lca-comparison/1.introduction",
-              "5.Articles/lca-comparison/2.lcas",
-              "5.Articles/lca-comparison/3.key-criteria",
-              "5.Articles/lca-comparison/4.market-comparison",
-              "5.Articles/lca-comparison/5.collect-data",
-              "5.Articles/lca-comparison/6.faq",
-              "5.Articles/lca-comparison/7.conclusion"
+              "5.Articles/Landing_Page"
             ]
           }
         ]
