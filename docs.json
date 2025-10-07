@@ -48,7 +48,8 @@
           {
             "group": "Platform Features",
             "pages": [
-              "3.Features/Features"
+              "3.Features/Features",
+              "3.Features/feature-comparison"
             ]
           }
         ]
