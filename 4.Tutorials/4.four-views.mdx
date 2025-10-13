@@ -1,62 +1,143 @@
 ---
 title: "Four views in Sustainly"
-description: "To thoroughly walk through each view of Sustainly function by function, for the purpose of enabling readers apply in unique projects."
 ---
 
 # Introduction to four views
 
-There are four views in Sustainly: Kanban view, List view, Results view, and Report view.
+Sustainly organises project data and model interaction across four distinct views, each optimised for a specific stage or type of interaction: **Kanban View**, **List View**, **Results View**, and **Report View**.
 
-# Kanban view
+# 1. Kanban View: The Modeling Hub
 
-Kanban view is where we interact with the model most of time, it enables users to see the full model at one glance and change the whole structure easily with simple click, the ideal lca model in sustainly is self-explanatory, which means it fullfills the mission of get all the infomation you need at a time. 
+The **Kanban View** is the primary interface for **model interaction and structural manipulation**. It's designed to provide an **intuitive, single-glance overview** of the entire Life Cycle Assessment (LCA) model, facilitating rapid structural modifications and adjustments via simple click-and-drag actions.
 
-## Top tool bar
+The goal of the Kanban view is to make the LCA model **self-explanatory**, providing all necessary information—life cycle inventory and stages—within an unified, easily digestible visual context.
 
-### Project name
+![Screenshot 2025-10-13 at 14.14.08.png](/images/Screenshot2025-10-13at14.14.08.png)
 
-### Scenario name
+## 1.1 Top tool bar functions
 
-### Impact indicator
+The top tool bar provides crucial controls for contextualising and filtering the model data displayed in the Kanban View:
 
-### Absolute/relative numbers
+| Feature                       | Description                                                                                                                                 | Action/Utility                                                                                                                                           |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project Name**              | Displays the current project's title.                                                                                                       | **Editable** within the main **Settings** module.                                                                                                        |
+| **Scenario Control**          | Indicates the currently active LCA scenario.                                                                                                | **Switch** between existing scenarios and **create** new ones for comparative analysis.                                                                  |
+| **Impact Indicator**          | Specifies the environmental impact category (e.g., Climate Change, Eutrophication) currently driving the data displayed on the model nodes. | **Dynamically changes** the impact values shown on Kanban nodes based on the selected **Impact Assessment Methodology**.                                 |
+| **Absolute/Relative Numbers** | Toggles the data display format for all impact figures.                                                                                     | Switch between **absolute numerical values** (e.g., kg CO2-eq) and **relative percentage contributions** to the total system impact.                     |
+| **Highlight**                 | Enables focus on specific elements within a complex model.                                                                                  | Filter and **highlight nodes** associated with chosen **tags** (e.g., 'Key Supplier', 'High Impact') to focus attention on critical components.          |
+| **System/Functional Unit**    | Determines the scope of the model visualisation.                                                                                            | **Switch** between viewing the full **System Model** and viewing the model scaled to the **Functional Unit** (the defined reference flow of the system). |
 
-### Highlight
+---
 
-### System/ Functional unit
+## 1.2 Cursor selection
 
-## Cursors
+The Kanban View utilises four specialised cursors, each designed to execute a specific modeling action. Selecting the appropriate cursor streamlines the process of building, connecting, and refining the LCA model structure.
 
-### Regular pointer
+| Cursor Name           | Shortcut key | Primary Function                                                                                                                                                                      |
+| :-------------------- | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Regular Pointer**   | **V**        | The default cursor for **general interaction**. Used to **click, select, move, add, or modify** existing nodes or stages within the model.                                            |
+| **Foreground**        | **F**        | **Designates a node as a Foreground process.** This selection is critical as it informs the user and the system where to focus primary data collection and refinement.                |
+| **Connector**         | **C**        | Used exclusively for establishing **structural relationships**. Allows the user to **connect nodes** with lines, visually representing the material or energy flow within the system. |
+| **Add Waste Process** | **W**        | A shortcut tool to rapidly insert a dedicated **Waste Management process node** immediately following the selected upstream node.                                                     |
 
-### Foreground
+![Screenshot 2025-10-13 at 14.15.50.png](/images/Screenshot2025-10-13at14.15.50.png)
 
-### Connector
+---
 
-### Add waste process
+## **1.3 Stages and Nodes**
 
-## Stages
+The Kanban View utilizes a hierarchical structure composed of **Stages** and **Nodes** to organise the LCA model.
 
-## Nodes
+![Screenshot 2025-10-13 at 14.18.44.png](/images/Screenshot2025-10-13at14.18.44.png)
 
-# List view
+### Stages
 
-## Overview
+Stages form the **horizontal backbone** of the model, representing distinct phases in the product's life cycle.
 
-## Scenarios
+- **Definition:** These are broad categories (e.g., 'Green Coffee Supply', 'Manufacturing', 'End-of-life') that organize the model chronologically and logically.
+- **Flexibility:** The level of detail (**coarse or granular**) is entirely adjustable based on project scope and intention. As shown in the model, stages differentiate key phases from supply to disposal.
 
-## Parameters
+### Nodes
 
-# Results view
+Nodes represent the individual **LCA activities or processes** that constitute the system. Each node is a container for specific inventory and impact data.
 
-## Overview
+- **Definition:** A Node is a single, quantifiable activity (e.g., 'Water in brewing coffee', 'Landfill disposal').
+- **Interaction:** Clicking a Node opens its detailed interface (as shown in insert a screenshot), where all parameters for that specific LCA activity are managed.
 
-## Details
+## **1.4 Node Detail Interface**
 
-## Scenarios
+The detailed Node interface is the control center for defining the parameters of a specific LCA activity. It is structured into logical sections for efficient data entry and documentation.
 
-# Report view
+![Screenshot 2025-10-13 at 14.21.35.png](/images/Screenshot2025-10-13at14.21.35.png)
 
-## Environmental Impact Report
+### Node interface 1: activity, flows, and impact settings
 
-## Recommendations
+| Element                | Description                                                                                     | Function                                                                                                                                                                                                                       |
+| :--------------------- | :---------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Activity**           | The specific process chosen from the system's library (e.g., 'Transport from Kenya to Europe'). | **Selects** the core process from library to be used for this node.                                                                                                                                                            |
+| **Input, Total, Unit** | The quantitative flow defining the node.                                                        | **Defines** the process's **Input** (e.g., 100 kg of material). The **Total** value can be calculated by the system based on **parameters** or inputs from other nodes, and must be validated against the specified **Unit**.  |
+| **Impact Indicators**  | Displays the environmental profile for the current node.                                        | Shows how the activity contributes across **different impact indicators** (e.g., Global Warming Potential, Eutrophication) based on the current global methodology selection.                                                  |
+| **Description**        | A free-text field near the centre of the interface.                                             | Provides space to **describe the meaning and context** of this specific node/activity for clarity.                                                                                                                             |
+| **Tags**               | A simple input field (e.g., 'Packaging', 'Waste').                                              | Used to **sort, categorise, and filter** the nodes across the entire model.                                                                                                                                                    |
+| **Suppliers**          | A placeholder area to link the node to the data provider.                                       | Used to **target the supplier** of the input/activity data, which may require updating or maintenance.                                                                                                                         |
+| **Node Settings**      | A toggle at the base of the interface.                                                          | **Enables or disables** the node's contribution to the overall impact calculation. By default, enabled nodes **will be counted in the impact**. Unenabled nodes are excluded from the results but remain visible in the model. |
+| **Comments**           | A simple text box at the bottom.                                                                | Enables users to **leave a comment** for themselves or a collaborator regarding the node's status, uncertainties, or required future actions.                                                                                  |
+
+### Node interface 2: quality and documentation
+
+| Element                | Description                                                              | Function                                                                                                                                                                                                         |
+| :--------------------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Inputs&outputs**     | Accesses the detailed **Inputs & Outputs** associated with the activity. | Allows the user to see or modify the full inventory flows linked to the selected **Activity**.                                                                                                                   |
+| **Representativeness** | Section dedicated to recording the **data quality**.                     | Users can **record the quality** across four key dimensions for transparency and uncertainty analysis: **Geography** (location fit), **Technology** (process fit), **Time** (age of data), and **Completeness.** |
+| **Files**              | Section for supporting documentation.                                    | **Upload relevant files** (e.g., data collection sheets, supplier reports, internal technical diagrams) to document the source and scope of the data used in the node.                                           |
+
+# 2. List View: Data Validation and Bulk Review
+
+The **List View** presents the entire Life Cycle Inventory (LCI) data in a **tabular, spreadsheet-like format**. This view is specifically optimised for **detailed data validation and bulk review**, providing a clear, itemised breakdown of every process flow within the model.
+
+The List View is composed of three primary tabs, each serving a distinct analytical function: **Overview**, **Scenarios**, and **Parameters**.
+
+## 2.1 Overview Tab
+
+The **Overview** tab displays the aggregated list of all individual activities (LCA processes) that constitute the current model scenario. This is the primary location for reviewing the LCI flows.
+
+For maximum efficiency, users can directly access the full **Node Detail Interface** by clicking on any row/node, and certain properties (like Input quantity and Stage) can be modified directly within the table itself.
+
+![Screenshot 2025-10-13 at 14.25.55.png](/images/Screenshot2025-10-13at14.25.55.png)
+
+| Element     | Content                                                                                                                                                 | Purpose                                                                                         |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------- |
+| **Name**    | The name assigned to the Node (e.g., 'Transport from Kenya to Europe').                                                                                 | Provides the **immediate reference name** for the specific LCA activity.                        |
+| **Dataset** | The specific LCI process selected for the activity (e.g., 'transport, freight, sea, container ship').                                                   | Confirms the exact dataset being referenced.                                                    |
+| **Input**   | The quantitative value of the flow, which can be a **direct number or a mathematical expression/calculation** (e.g., 1∗50000 or linked to a parameter). | Audits the precise amount of the flow for the process.                                          |
+| **Unit**    | The measuring unit associated with the input value (e.g., metric kg\*km).                                                                               | Ensures consistency and correctness of the unit applied to the flow.                            |
+| **Impact**  | The calculated environmental impact of the individual activity.                                                                                         | Provides a quick itemised check of the contribution of each process to the total system impact. |
+| **Stage**   | The life cycle stage (from the Kanban View) to which the activity belongs (e.g., 'Green coffee supply').                                                | Provides organisational context for the activity within the model's structure.                  |
+
+## 2.2 Scenarios Tab
+
+The **Scenarios Tab** is the dedicated interface for **comparative analysis**, allowing users to evaluate the differences in Life Cycle Inventory (LCI) data across the various scenarios defined in the project. It is optimised to present quantitative differences side-by-side.
+
+![Screenshot 2025-10-13 at 14.30.18.png](/images/Screenshot2025-10-13at14.30.18.png)
+
+| Element        | Content                                                                                                      | Purpose                                                                                                                                            |
+| :------------- | :----------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Name**       | The name assigned to the Node (e.g., 'Transport from Kenya to Europe').                                      | Provides the immediate reference name for the specific LCA activity being analysed in the row.                                                     |
+| **Scenario 1** | The Input/Flow Quantity data corresponding to **the primary (often baseline) scenario**.                     | Allows reviewing of the LCI data for the first defined scenario.                                                                                   |
+| **Scenario 2** | The Input/Flow Quantity data corresponding to **the secondary scenario**.                                    | Allows direct **quantitative comparison** against the primary scenario, specifically highlighting differences in LCI data due to altered settings. |
+| **Scenario n** | Additional columns generated for every other scenario defined in the project (Scenario 3, Scenario 4, etc.). | Ensures the entire set of comparative scenarios is available for **simultaneous review and validatio**n.                                           |
+
+## 2.3 Parameters Tab
+
+The **Parameters Tab** is to define and manage **global variables** **(parameters)**. This functionality is essential for maintaining model consistency and conducting effective sensitivity analysis.
+
+![Screenshot 2025-10-13 at 14.30.36.png](/images/Screenshot2025-10-13at14.30.36.png)
+
+| Element                                             | Description                                                               | Purpose                                                                                                                                                              |
+| :-------------------------------------------------- | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Parameter**                                       | The user-defined name of the variable (e.g., ‘number of coffee’).         | Creates a single, reusable variable that can be linked to the **Input** fields of multiple Nodes across the entire model.                                            |
+| **Scenario Columns (Scenario 1, Scenario 2, etc.)** | The numerical value assigned to the parameter for that specific scenario. | Allows the parameter's value to be **altered across different scenarios** (e.g., 'number of coffee' could be 200 times in Scenario 1&3 and 110 times in Scenario 2). |
+
+# 3. Results View: Impact Analysis and Visualisation
+
+# 4. Report View: Environmental Impact Report
