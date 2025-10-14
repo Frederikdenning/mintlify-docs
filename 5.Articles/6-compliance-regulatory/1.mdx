@@ -1,17 +1,9 @@
 ---
 title: "EF 3.1 Compliance Checklist: Align Your LCA With The EU Environmental Footprint"
 description: "Step-by-step guide and checklist to make your Life Cycle Assessment compliant with the EU Environmental Footprint (EF 3.1) method—data quality, modeling rules, and reporting."
-authors:
-  - "Sustainly Team"
-toc: true
-tags:
-  - "EF 3.1 compliance"
-  - "EU Environmental Footprint"
-  - "Life Cycle Assessment (LCA)"
-  - "EPD and reporting"
-  - "IPCC 2021 vs EF 3.1"
-  - "regulatory compliance"
-  - "sustainable business"
+authors: "Sustainly Team"
+toc: "true"
+tags: "EF 3.1 compliance,EU Environmental Footprint,Life Cycle Assessment (LCA),EPD and reporting,IPCC 2021 vs EF 3.1,regulatory compliance,sustainable business"
 ---
 
 The EU Environmental Footprint (**EF 3.1**) is a multi-category impact assessment method widely requested by EU buyers, educators, and regulators. This guide provides an auditor-friendly workflow to align your LCA with EF 3.1—from scope and data quality to modeling rules and reporting. We also note where **Sustainly** keeps EF defaults consistent via templates and automation.
@@ -19,54 +11,63 @@ The EU Environmental Footprint (**EF 3.1**) is a multi-category impact assessmen
 > Tip: You can report **IPCC 2021** climate results in parallel, but your primary table should follow **EF 3.1** categories.
 
 ## Who Typically Needs EF 3.1
-- Suppliers responding to EU customer footprint requests  
-- Brands building comparable product dashboards for the EU market  
-- Universities teaching multi-category LCIA beyond carbon-only  
+
+- Suppliers responding to EU customer footprint requests
+- Brands building comparable product dashboards for the EU market
+- Universities teaching multi-category LCIA beyond carbon-only
 - Enterprises preparing policy-ready evidence or pre-EPD analyses
 
 ## EF 3.1 Compliance — Quick Checklist
 
-**Scope & Goal**  
-- [ ] Goal statement names **EF 3.1** as the primary method  
-- [ ] Functional/declared unit and decision context (comparative or not) are explicit  
-- [ ] Boundary chosen (cradle-to-gate / cradle-to-grave) with any exclusions justified
+**Scope & Goal**
 
-**Data Quality & Sources**  
-- [ ] **Primary (foreground)** data listed with site, year, technology, representativeness  
-- [ ] **Secondary (background)** from EF-compatible databases; version noted  
-- [ ] Data Quality Indicators (temporal, geographical, technological) recorded for key flows  
-- [ ] Electricity mixes and markets match geography and year
+- Goal statement names **EF 3.1** as the primary method
+- Functional/declared unit and decision context (comparative or not) are explicit
+- Boundary chosen (cradle-to-gate / cradle-to-grave) with any exclusions justified
 
-**Modeling Rules**  
-- [ ] Allocation approach (cut-off, consequential, etc.) is stated and applied consistently  
-- [ ] Recycling modeled transparently (collection, sorting, reprocessing)  
-- [ ] Transport modes, distances, and load factors documented  
-- [ ] End-of-life routes and rates explicit; credits/loads beyond boundary treated correctly
+**Data Quality & Sources**
 
-**Impact Assessment**  
-- [ ] **All required EF 3.1 categories** computed for your audience  
-- [ ] Any non-EF (e.g., IPCC 2021) labeled supplemental, not mixed into EF tables  
-- [ ] Characterization factors correspond to the EF 3.1 version in use
+- **Primary (foreground)** data listed with site, year, technology, representativeness
+- **Secondary (background)** from EF-compatible databases; version noted
+- Data Quality Indicators (temporal, geographical, technological) recorded for key flows
+- Electricity mixes and markets match geography and year
 
-**Results & Reporting**  
-- [ ] Results reported **per functional/declared unit**  
-- [ ] Contribution analysis identifies top stages/flows  
-- [ ] Assumptions, cut-offs, and data gaps disclosed  
-- [ ] Sensitivities/scenarios (e.g., recycled content, energy mix) summarized
+**Modeling Rules**
 
-**Review & Governance**  
-- [ ] Internal QA: units, ranges, coverage checks passed  
-- [ ] Versioning captured (database versions, method IDs, data vintages)  
-- [ ] External review/verification plan defined if publishing outward
+- Allocation approach (cut-off, consequential, etc.) is stated and applied consistently
+- Recycling modeled transparently (collection, sorting, reprocessing)
+- Transport modes, distances, and load factors documented
+- End-of-life routes and rates explicit; credits/loads beyond boundary treated correctly
+
+**Impact Assessment**
+
+- **All required EF 3.1 categories** computed for your audience
+- Any non-EF (e.g., IPCC 2021) labeled supplemental, not mixed into EF tables
+- Characterization factors correspond to the EF 3.1 version in use
+
+**Results & Reporting**
+
+- Results reported **per functional/declared unit**
+- Contribution analysis identifies top stages/flows
+- Assumptions, cut-offs, and data gaps disclosed
+- Sensitivities/scenarios (e.g., recycled content, energy mix) summarized
+
+**Review & Governance**
+
+- Internal QA: units, ranges, coverage checks passed
+- Versioning captured (database versions, method IDs, data vintages)
+- External review/verification plan defined if publishing outward
 
 **In Sustainly:** Project templates lock **EF 3.1**, boundary, allocation, and geography defaults; notes and sources travel with exports.
 
 ## Step 1. Define Goal, Scope, and Unit
+
 Name EF 3.1 as primary. Fix the **functional/declared unit**, boundary, geography, and study year. Avoid mid-study changes.
 
 **Sustainly:** Setup wizard locks EF 3.1, allocation, boundary, geography, and year. Save as a template.
 
 ## Step 2. Gather Foreground Data (Primary)
+
 Collect metered energy, materials, yields/scrap, packaging, and transport for controlled/supplier steps. Record **site, year, tech, source** per line.
 
 **Minimum schema (per unit):** material kg, electricity kWh, fuels (MJ or kWh), transport km×mode, packaging g, waste routes, reporting year, site.
@@ -74,58 +75,67 @@ Collect metered energy, materials, yields/scrap, packaging, and transport for co
 **Sustainly:** CSV importer + AI mapping; automatic unit harmonization (g→kg, miles→km, BTU→MJ).
 
 ## Step 3. Map Background Data (Secondary)
+
 Use EF-compatible datasets for materials, energy, and waste. Match **region** and **technology**; document proxies and vintages.
 
 **Sustainly:** Region/tech filters and suggestions; flags off-region picks.
 
 ## Step 4. Set Allocation & Recycling Rules
+
 State allocation (e.g., **cut-off**). For recycled content and end-of-life, document collection, sorting, reprocessing, and any credits/loads beyond boundary.
 
 **Sustainly:** Project-level settings cascade; notes panel captures rules for reviewers.
 
 ## Step 5. Compute EF 3.1 Categories (Plus Optional IPCC)
+
 Run EF 3.1 for the multi-category view (climate, resource use, acidification, eutrophication, photochemical ozone formation, water use, etc.). Optionally add **IPCC 2021** climate as supplemental.
 
 **Sustainly:** One-click method switch; EF 3.1 and IPCC 2021 side by side without rebuild.
 
 ## Step 6. Contribution & Sensitivity Analyses
+
 Identify top hotspots and test levers (recycled content, transport mode, energy mix, lifetime). Keep unit and boundary identical.
 
 **Sustainly:** Clone scenarios; export comparison + hotspot charts.
 
 ## Step 7. Report Results, Assumptions, and Data Quality
+
 Publish an EF-aligned table per unit, hotspot narrative, and **Data Quality** note (primary vs secondary, vintages, representativeness). Disclose cut-offs, proxies, and limitations.
 
-**Template note (copy-ready):**  
+**Template note (copy-ready):**\
 Primary: 2024 metered electricity and process data at Brno site. Secondary: EU Environmental Footprint DB (vX); ecoinvent added for [flows]. Geography: EU; transport per logistics plan. Allocation: cut-off. Minor items `&lt;1%` mass/energy excluded and listed.
 
 **Sustainly:** Exports include notes and versions automatically.
 
 ## Common Pitfalls & Fast Fixes
-- **Mixing methods in one table** → keep EF 3.1 tables pure; put IPCC 2021 elsewhere.  
-- **Wrong region datasets** → match geography/tech; document proxies.  
-- **Only climate reported** → EF is multi-category; include required categories.  
-- **Unit inconsistencies** → normalize to SI; run range checks.  
+
+- **Mixing methods in one table** → keep EF 3.1 tables pure; put IPCC 2021 elsewhere.
+- **Wrong region datasets** → match geography/tech; document proxies.
+- **Only climate reported** → EF is multi-category; include required categories.
+- **Unit inconsistencies** → normalize to SI; run range checks.
 - **Missing end-of-life** → specify routes/rates; avoid ad-hoc credits.
 
 ## Mini Example: Packaging Change Under EF 3.1
+
 Brand compares virgin PET vs rPET bottle bodies (EU). EF 3.1 shows climate/resource gains for rPET with a small trade-off elsewhere. Decision: move to rPET, rail where feasible, disclose trade-off note.
 
 ## FAQ
-**Can I submit only EF climate?** No—report the full EF set; show IPCC climate separately if needed.  
-**What database do I need?** Start with **EU Environmental Footprint**; add **ecoinvent** for gaps and document mix.  
-**Do I need external verification?** For public claims/EPD-adjacent comms, plan an external review.  
+
+**Can I submit only EF climate?** No—report the full EF set; show IPCC climate separately if needed.\
+**What database do I need?** Start with **EU Environmental Footprint**; add **ecoinvent** for gaps and document mix.\
+**Do I need external verification?** For public claims/EPD-adjacent comms, plan an external review.\
 **How often to refresh?** Annually or after material/energy/supplier changes.
 
 ## Why Use Sustainly For EF 3.1
-- EF 3.1 templates out-of-the-box  
-- AI mapping + unit harmonization  
-- Quick scenario cloning  
-- Parallel IPCC 2021 without rebuild  
+
+- EF 3.1 templates out-of-the-box
+- AI mapping + unit harmonization
+- Quick scenario cloning
+- Parallel IPCC 2021 without rebuild
 - Notes/sources/versioning preserved in exports; SSO/2FA collaboration
 
 ---
 
-**Meta Title**: How to Align Your LCA with EF 3.1 — Compliance Checklist for the EU Environmental Footprint  
-**Meta Description**: Practical, auditor-friendly steps to make your Life Cycle Assessment compliant with EF 3.1 — scope, data quality, allocation, impact categories, and reporting, with Sustainly tips.  
+**Meta Title**: How to Align Your LCA with EF 3.1 — Compliance Checklist for the EU Environmental Footprint\
+**Meta Description**: Practical, auditor-friendly steps to make your Life Cycle Assessment compliant with EF 3.1 — scope, data quality, allocation, impact categories, and reporting, with Sustainly tips.\
 **Keywords**: ef 3.1 compliance, eu environmental footprint, lca compliance checklist, ef impact categories, data quality rules, allocation and recycling modeling, product impact reporting, epd preparation, ipcc 2021 vs ef 3.1
