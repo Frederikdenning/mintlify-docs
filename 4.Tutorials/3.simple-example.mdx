@@ -1,0 +1,152 @@
+---
+title: "Building Your First Model with Sustainly"
+description: "This guide provides a rapid introduction to the Sustainly platform by creating a basic Life Cycle Assessment (LCA) model for a reusable polypropylene (PP) plastic cup."
+---
+
+# **Overview**
+
+**🌟A Note for Beginners:** If you are entirely new to LCA, we highly recommend you first read our **LCA Introduction**. Once you've reviewed the foundational concepts—such as functional unit, system boundaries, and databases—you'll be fully equipped to master this tutorial!
+
+---
+
+This chapter will guide you through building a LCA model for a **reusable polypropylene (PP) plastic cup** within the Sustainly software. This analysis is critical for accurately modeling products where the **reuse-phase (washing)** is a major environmental determinant.
+
+Upon completion of this tutorial, you will be proficient in:
+
+- **Constructing a complete LCA model** for a product, covering all stages from raw material extraction to end-of-life disposal.
+- **Refining and verifying** the AI-generated model to ensure process and boundary accuracy.
+- **Testing the sensitivity of the overall environmental impact** to variations in the number of reuses.
+
+# **Project Goal & Scope**
+
+Before we begin modeling, let's clearly define the parameters of our analysis. This precision is critical for a valid comparison.
+
+**Goal:** To quantify the environmental impacts of a **reusable polypropylene (PP) plastic cup** across its entire life cycle, and to analyze how the reuse cycles influences the total environmental impact.
+
+**Functional Unit:** Serving one medium hot drink (340 ml).
+
+**System Boundaries:** **Cradle-to-Grave**. This includes every stage from initial raw material extraction to final disposal.
+
+| **Reusable Plastic Cup**     | Scenario 1                                                | Scenario 2 | Scenario 3 |
+| :--------------------------- | :-------------------------------------------------------- | :--------- | :--------- |
+| **Material**                 | PP                                                        | -ll-       | -ll-       |
+| **Number of uses**           | 500                                                       | 250        | 50         |
+| **Weight per container (g)** | 49                                                        | -ll-       | -ll-       |
+| **Capacity (ml)**            | 340                                                       | -ll-       | -ll-       |
+| **End-of-life assumptions**  | Dishwashing (reuse-phase), subsequent Landfill (disposal) | -ll-       | -ll-       |
+
+---
+
+# **Step-by-Step Modeling**
+
+This section outlines the precise steps for building the LCA model within Sustainly based on the defined scope.
+
+## **1.Project Setup: Add Product, Database, and Methodology**
+
+- Navigate to the **Products** panel in Sustainly.
+- Click the **"Add product"** button.
+- Enter the following project details:
+  - **Product Name:** Reusable PP Cup
+  - **Product ID:** `tutorial-1`
+  - **Database:** The Environmental Footprint Database
+  - **Methodology:** EF v3.1
+
+![Screenshot 2025-09-30 at 13.33.57.png](/images/Screenshot2025-09-30at13.33.57.png)
+
+## **2.Model Creation with AI Assistance**
+
+Sustainly's AI agent can streamline the initial modeling process.
+
+- Click the **"Open AI agent"** button on the options bar. This will take you to the chat interface.
+- Enter the following prompt to generate the initial model:
+
+  > "Create an LCA model for a reusable PP cup, designed to carry a 340ml hot beverage. The raw materials, including 49g of polypropylene, are sourced from Germany. The cup is manufactured, used, washed, and landfilled in Denmark. The scope should be cradle-to-grave."
+
+The AI will generate a complete LCA model based on this information.
+
+![Screenshot 2025-09-30 at 12.04.27.png](/images/Screenshot2025-09-30at12.04.27.png)
+
+We have made a quick walkthrough video of showing how to get started with Sustainly, from creating the project till having the first LCA model. Check it out below:
+
+<iframe src="https://www.youtube.com/embed/bzAGbC559w8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+## **3.Refining the Model: Verification & Modification**
+
+While AI accelerates the process, it is essential to verify the accuracy of the assigned activities. We will now refine the model by ensuring the accuracy of your model's nodes and activities.
+
+### **3.1 Reselect the activity in the node**
+
+The AI agent efficiently assigns default activities, but your expert knowledge allows for crucial improvements in data quality.
+
+- In the **Raw Materials** stage, locate the **"Polypropylene"** node. The AI may have assigned a standard activity like _polypropylene production, granulate (RoW, Rest of World)_.
+- While this provides a starting point, there is an opportunity to improve the geographical precision of your data. Based on our scope, the **"Rest of World"** boundary is not specific enough.
+- Manually change the assigned activity to the more suitable and geographically precise activity: `polypropylene production, granulate (RER, Europe)`.
+
+![Screenshot 2025-09-30 at 13.55.22.png](/images/Screenshot2025-09-30at13.55.22.png)
+
+### **3.2 Delete the out of scope nodes**
+
+When reviewing your AI-generated model, check for any nodes that may be out of scope.
+
+- For instance, in the **Use** stage, a **"Washing wastewater"** node appears. This node is irrelevant because the impact of wastewater treatment is **already included** within the life cycle inventory data of the primary washing activity (the dishwashing node).
+- **Manually delete this redundant node** to maintain a lean, accurate inventory and prevent double-counting of environmental burdens.
+
+![Screenshot 2025-09-30 at 14.02.09.png](/images/Screenshot2025-09-30at14.02.09.png)
+
+![Screenshot 2025-09-30 at 14.03.58.png](/images/Screenshot2025-09-30at14.03.58.png)
+
+### **3.3 Specify the amount input in the nodes by adding a global parameter**
+
+- Since this Polypropylene (PP) cup is designed for repeated use, the environmental burden of the **raw material, manufacturing, and end-of-life disposal** must be allocated across its total number of cycles.
+- To define a global parameter:
+  1. Navigate to the **List View**.
+  2. Select **Parameters** and click **the plus icon in the bottom tool bar**
+  3. Name the parameter `reuse times`.
+  4. Specify the value of this parameter as **500** for this initial scenario.
+
+  ![image.png](/images/image.png)
+- You will then use this `reuseTimes` parameter as the divisor for all non-use-phase inventory flows, it's easy to change the input values at once in **List view.**
+
+![Screenshot 2025-09-30 at 14.38.40.png](/images/Screenshot2025-09-30at14.38.40.png)
+
+### **3.4 Iterative Refinement and Model Ownership**
+
+**Repeat the refinement process iteratively** until you are fully satisfied with the accuracy and completeness of the model.
+
+Keep refining the model iteratively until you're completely satisfied with its accuracy and robustness. Remember, one of the biggest benefits of using Sustainly's AI is how it **streamlines your workflow** by handling the initial setup. This efficiency frees you up to focus on the truly critical task: **expert verification and strategic refinement.** Although the AI does the heavy lifting, the final integrity of the LCA rests with you.
+
+To have a clearer idea of how to refine thhe model step by step, you can watch the video below:
+
+<iframe src="https://www.youtube.com/embed/NrizQt-RVc8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+## \*\*4. Adding scenarios with different `reuse times` \*\*
+
+To effectively analyze the influence of the reuse factor—a key objective of this LCA—we must create multiple scenarios that vary only the `reuse times` parameter. This will visually demonstrate the environmental trade-off between production impact and usage intensity.
+
+1. **Duplicate the Model:** Return to the **Kanban View** (or the main modeling interface).
+2. Locate the top toolbar where **"Scenario 1"** is displayed.
+3. Click the scenario selector and create two new scenarios by entering the following names:
+   - **Scenario 2 - 250 Uses**
+   - **Scenario 3 - 50 Uses**
+
+   ![Screenshot 2025-09-30 at 14.41.28.png](/images/Screenshot2025-09-30at14.41.28.png)
+4. **Update Parameters:** For each new scenario, navigate back to the **List View → Parameters** and modify the value of the `reuse times` parameter:
+   - For **Scenario 2**, set `reuse times` to **250**.
+   - For **Scenario 3**, set `reuse times` to **50**.
+
+   ![Screenshot 2025-09-30 at 14.49.42.png](/images/Screenshot2025-09-30at14.49.42.png)
+
+By systematically altering only this one critical parameter, you establish a controlled experiment that precisely isolates the impact of reuse frequency on the final life cycle results.
+
+The video below shows the deatiled steps of how to create scenarios and specify parameters to different scenarios:
+
+<iframe src="https://www.youtube.com/embed/tpyFQJZ0CNc" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+## **5. Viewing the Results**
+
+- Once the model is finalized, click the **"Result view"** button on the options bar.
+- The results dashboard will display the environmental impacts of your model from various perspectives, allowing for a detailed analysis and comparison.
+
+![Screenshot 2025-09-30 at 14.51.11.png](/images/Screenshot2025-09-30at14.51.11.png)
+
+![Screenshot 2025-09-30 at 14.21.31.png](/images/Screenshot2025-09-30at14.21.31.png)

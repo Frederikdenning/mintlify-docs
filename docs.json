@@ -17,7 +17,7 @@
           {
             "group": "Introduction",
             "pages": [
-              "introduction/intro"
+              "1.Introduction/Intro"
             ]
           }
         ]
@@ -28,16 +28,16 @@
           {
             "group": "LCA Knowledge",
             "pages": [
-              "lca-guideline/introduction",
-              "lca-guideline/lca-vs-co2",
-              "lca-guideline/addvalue",
-              "lca-guideline/standards",
-              "lca-guideline/methods",
-              "lca-guideline/impact",
-              "lca-guideline/units",
-              "lca-guideline/database",
-              "lca-guideline/getting",
-              "lca-guideline/thesaurus"
+              "2.LCA-Guideline/introduction",
+              "2.LCA-Guideline/lca-vs-co2",
+              "2.LCA-Guideline/addvalue",
+              "2.LCA-Guideline/standards",
+              "2.LCA-Guideline/methods",
+              "2.LCA-Guideline/impact",
+              "2.LCA-Guideline/units",
+              "2.LCA-Guideline/database",
+              "2.LCA-Guideline/getting",
+              "2.LCA-Guideline/thesaurus"
             ]
           }
         ]
@@ -48,7 +48,7 @@
           {
             "group": "Platform Features",
             "pages": [
-              "features/features"
+              "3.Features/Features"
             ]
           }
         ]
@@ -59,8 +59,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "tutorials/simple-example",
-              "tutorials/four-views"
+              "4.Tutorials/3.simple-example"
             ]
           }
         ]
@@ -71,7 +70,7 @@
           {
             "group": "Browse & Learn",
             "pages": [
-              "articles/index"
+              "5.Articles/Landing_Page"
             ]
           }
         ]
