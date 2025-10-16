@@ -15,9 +15,9 @@
         "tab": "Navigation",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "ai-powered-lca",
             "pages": [
-              "1.Introduction/Intro"
+              "ai-powered-lca/intro"
             ]
           }
         ]
@@ -26,18 +26,18 @@
         "tab": "LCA Introduction",
         "groups": [
           {
-            "group": "LCA Knowledge",
+            "group": "lca-guideline",
             "pages": [
-              "2.LCA-Guideline/introduction",
-              "2.LCA-Guideline/lca-vs-co2",
-              "2.LCA-Guideline/addvalue",
-              "2.LCA-Guideline/standards",
-              "2.LCA-Guideline/methods",
-              "2.LCA-Guideline/impact",
-              "2.LCA-Guideline/units",
-              "2.LCA-Guideline/database",
-              "2.LCA-Guideline/getting",
-              "2.LCA-Guideline/thesaurus"
+              "lca-guideline/what-is-lca",
+              "lca-guideline/lca-vs-carbon-footprint",
+              "lca-guideline/units-in-lca",
+              "lca-guideline/lca-for-business",
+              "lca-guideline/epd-pef-dpp",
+              "lca-guideline/lca-methods-models",
+              "lca-guideline/environmental-impact",
+              "lca-guideline/lca-databases",
+              "lca-guideline/lca-guideline/how-to-start-lca",
+              "lca-guideline/lca-glossary"
             ]
           }
         ]
@@ -46,9 +46,10 @@
         "tab": "Features",
         "groups": [
           {
-            "group": "Platform Features",
+            "group": "best-lca-tools",
             "pages": [
-              "3.Features/Features"
+              "best-lca-tools/feature-comparison",
+              "best-lca-tools/lca-with-ai"
             ]
           }
         ]
