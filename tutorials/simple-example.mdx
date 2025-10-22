@@ -51,8 +51,6 @@ This section outlines the precise steps for building the LCA model within Sustai
   - **Database:** The Environmental Footprint Database
   - **Methodology:** EF v3.1
 
-![Screenshot 2025-09-30 at 13.33.57.png](/images/Screenshot2025-09-30at13.33.57.png)
-
 ## **2.Model Creation with AI Assistance**
 
 Sustainly's AI agent can streamline the initial modeling process.
@@ -64,7 +62,9 @@ Sustainly's AI agent can streamline the initial modeling process.
 
 The AI will generate a complete LCA model based on this information.
 
-![Screenshot 2025-09-30 at 12.04.27.png](/images/Screenshot2025-09-30at12.04.27.png)
+We have made a quick walkthrough video of showing how to get started with Sustainly, from creating the project till having the first LCA model. Check it out below:
+
+<iframe src="https://www.youtube.com/embed/bzAGbC559w8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
 ## **3.Refining the Model: Verification & Modification**
 
@@ -78,18 +78,12 @@ The AI agent efficiently assigns default activities, but your expert knowledge a
 - While this provides a starting point, there is an opportunity to improve the geographical precision of your data. Based on our scope, the **"Rest of World"** boundary is not specific enough.
 - Manually change the assigned activity to the more suitable and geographically precise activity: `polypropylene production, granulate (RER, Europe)`.
 
-![Screenshot 2025-09-30 at 13.55.22.png](/images/Screenshot2025-09-30at13.55.22.png)
-
 ### **3.2 Delete the out of scope nodes**
 
 When reviewing your AI-generated model, check for any nodes that may be out of scope.
 
 - For instance, in the **Use** stage, a **"Washing wastewater"** node appears. This node is irrelevant because the impact of wastewater treatment is **already included** within the life cycle inventory data of the primary washing activity (the dishwashing node).
 - **Manually delete this redundant node** to maintain a lean, accurate inventory and prevent double-counting of environmental burdens.
-
-![Screenshot 2025-09-30 at 14.02.09.png](/images/Screenshot2025-09-30at14.02.09.png)
-
-![Screenshot 2025-09-30 at 14.03.58.png](/images/Screenshot2025-09-30at14.03.58.png)
 
 ### **3.3 Specify the amount input in the nodes by adding a global parameter**
 
@@ -99,17 +93,17 @@ When reviewing your AI-generated model, check for any nodes that may be out of s
   2. Select **Parameters** and click **the plus icon in the bottom tool bar**
   3. Name the parameter `reuse times`.
   4. Specify the value of this parameter as **500** for this initial scenario.
-
-  ![image.png](/images/image.png)
 - You will then use this `reuseTimes` parameter as the divisor for all non-use-phase inventory flows, it's easy to change the input values at once in **List view.**
-
-![Screenshot 2025-09-30 at 14.38.40.png](/images/Screenshot2025-09-30at14.38.40.png)
 
 ### **3.4 Iterative Refinement and Model Ownership**
 
 **Repeat the refinement process iteratively** until you are fully satisfied with the accuracy and completeness of the model.
 
 Keep refining the model iteratively until you're completely satisfied with its accuracy and robustness. Remember, one of the biggest benefits of using Sustainly's AI is how it **streamlines your workflow** by handling the initial setup. This efficiency frees you up to focus on the truly critical task: **expert verification and strategic refinement.** Although the AI does the heavy lifting, the final integrity of the LCA rests with you.
+
+To have a clearer idea of how to refine the model step by step, you can watch the video below:
+
+<iframe src="https://www.youtube.com/embed/NrizQt-RVc8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
 ## \*\*4. Adding scenarios with different `reuse times` \*\*
 
@@ -120,21 +114,17 @@ To effectively analyze the influence of the reuse factor—a key objective of th
 3. Click the scenario selector and create two new scenarios by entering the following names:
    - **Scenario 2 - 250 Uses**
    - **Scenario 3 - 50 Uses**
-
-   ![Screenshot 2025-09-30 at 14.41.28.png](/images/Screenshot2025-09-30at14.41.28.png)
 4. **Update Parameters:** For each new scenario, navigate back to the **List View → Parameters** and modify the value of the `reuse times` parameter:
    - For **Scenario 2**, set `reuse times` to **250**.
    - For **Scenario 3**, set `reuse times` to **50**.
 
-   ![Screenshot 2025-09-30 at 14.49.42.png](/images/Screenshot2025-09-30at14.49.42.png)
-
 By systematically altering only this one critical parameter, you establish a controlled experiment that precisely isolates the impact of reuse frequency on the final life cycle results.
+
+The video below shows the deatiled steps of how to create scenarios and specify parameters to different scenarios:
+
+<iframe src="https://www.youtube.com/embed/tpyFQJZ0CNc" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 
 ## **5. Viewing the Results**
 
 - Once the model is finalized, click the **"Result view"** button on the options bar.
 - The results dashboard will display the environmental impacts of your model from various perspectives, allowing for a detailed analysis and comparison.
-
-![Screenshot 2025-09-30 at 14.51.11.png](/images/Screenshot2025-09-30at14.51.11.png)
-
-![Screenshot 2025-09-30 at 14.21.31.png](/images/Screenshot2025-09-30at14.21.31.png)

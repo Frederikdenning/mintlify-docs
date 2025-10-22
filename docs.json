@@ -60,7 +60,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "4.Tutorials/3.simple-example"
+              "tutorials/simple-example"
             ]
           }
         ]
