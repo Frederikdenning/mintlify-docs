@@ -1,0 +1,152 @@
+---
+title: "Best Practices for Managing LCA Data Quality"
+description: "Ensure your Life Cycle Assessments (LCAs) are accurate and reliable by mastering the fundamentals of data quality — from collection to verification and maintenance."
+slug: "lca-data-quality-best-practices"
+author: "Sustainly Team"
+published: "true"
+toc: "true"
+keywords: ["Life Cycle Assessment (LCA)","LCA data quality","sustainability best practices","reliable LCA","data management","environmental data verification"]
+---
+
+> “In sustainability, bad data is worse than no data.”\
+> 💬 _Quality LCA data isn’t about quantity — it’s about precision, traceability, and consistency._
+
+---
+
+## Why Data Quality Defines LCA Reliability
+
+A Life Cycle Assessment is only as credible as the data behind it.\
+Even the most advanced modeling or AI-driven tools cannot compensate for poor-quality input.
+
+High-quality data ensures:
+
+- Accurate and comparable results
+- Lower verification costs
+- Stronger compliance with standards like **ISO 14044** and **EN 15804**
+- Better decision-making for eco-design and sourcing
+
+Yet many organizations still underestimate how fragmented or outdated their data is — especially when LCAs are run across multiple product lines.
+
+---
+
+## 1. Define Clear Data Quality Requirements
+
+Start by defining what _“good data”_ means for your organization.\
+Without criteria, quality becomes subjective and inconsistencies multiply.
+
+**Use the five standard data quality dimensions:**
+
+| Dimension         | Description                                  | Example                                           |
+| ----------------- | -------------------------------------------- | ------------------------------------------------- |
+| **Technological** | Match between process and dataset technology | Using composite material data for steel parts = ❌ |
+| **Geographical**  | Relevance to location of production          | Using global electricity data for Denmark = ❌     |
+| **Temporal**      | Age of the data                              | Using datasets older than 5 years = 🚫            |
+| **Completeness**  | Percentage of processes covered              | Missing transport or packaging data = ⚠️          |
+| **Reliability**   | Verified source and methodology              | Peer-reviewed data = ✅                            |
+
+<Info>
+  Document these criteria in your internal “LCA Data Quality Matrix.” Sustainly includes customizable templates for this.
+</Info>
+
+---
+
+## 2. Prioritize Primary Data Collection
+
+Secondary databases (like **ecoinvent** or **EF 3.1**) are valuable, but **primary company data** — direct measurements from production, logistics, or suppliers — always improves precision.
+
+> 💡 **Tip:** Begin by identifying which 20% of data contributes to 80% of your impact — then focus collection there.
+
+**Examples of high-impact primary data:**
+
+- Energy and material consumption in manufacturing
+- Transport distances and modes
+- Supplier energy sources
+- Packaging types and weights
+
+Sustainly’s **ERP and supplier integrations** help automate this collection process, ensuring updates stay continuous rather than manual.
+
+---
+
+## 3. Automate Data Validation and Consistency Checks
+
+Manual validation leads to human error and inconsistency.\
+Automation ensures your data is checked _before_ it enters the model.
+
+<Info>
+  Automated QA routines can detect missing values, mismatched units, or outdated datasets within seconds.
+</Info>
+
+**Best practice:**
+
+- Set automated alerts for outdated datasets (\>5 years old)
+- Use consistency checks between materials and processes (e.g., no plastic injection without polymer input)
+- Track version control for every dataset update
+
+With **Sustainly**, data consistency checks run automatically across every imported file or API input — keeping portfolio models synchronized.
+
+---
+
+## 4. Maintain a Centralized Data Repository
+
+A shared data repository is the backbone of quality management.\
+When analysts use local copies or spreadsheets, discrepancies become inevitable.
+
+> 🧠 _A centralized data hub transforms your LCA practice from reactive to scalable._
+
+| Feature             | Why It Matters                    |
+| ------------------- | --------------------------------- |
+| 🗂️ Central storage | Prevents data duplication         |
+| 🔄 Version control  | Tracks every change               |
+| 🔍 Data lineage     | Shows who changed what and why    |
+| 👥 Access roles     | Ensures accountability and review |
+
+Sustainly provides **team-based data governance**, so sustainability teams can maintain clarity across hundreds of LCAs without confusion.
+
+---
+
+## 5. Review and Update Regularly
+
+Even the cleanest dataset decays over time.\
+Supply chains shift, production processes evolve, and regulatory methods get updated.
+
+**Set up a review cycle:**
+
+- **Quarterly:** Check primary data accuracy.
+- **Annually:** Update background datasets (ecoinvent, EF 3.1).
+- **Every 2 years:** Recalibrate impact assessment methods (IPCC 2021, ReCiPe 2016).
+
+<Warning>
+  Using outdated data can invalidate compliance with EPD or ISO standards — even if models are technically correct.
+</Warning>
+
+> 💡 Sustainly automatically flags expired datasets and recommends updated versions, keeping every assessment aligned with current standards.
+
+---
+
+## Quick Recap
+
+| Step | Focus                   | Why It Matters      |
+| ---- | ----------------------- | ------------------- |
+| 1️⃣  | Define quality criteria | Establish clarity   |
+| 2️⃣  | Collect primary data    | Improve accuracy    |
+| 3️⃣  | Automate validation     | Reduce errors       |
+| 4️⃣  | Centralize data         | Ensure consistency  |
+| 5️⃣  | Review regularly        | Maintain compliance |
+
+---
+
+## Common Data Management Pitfalls
+
+- ❌ Mixing datasets from incompatible methods (e.g., ReCiPe + EF 3.1)
+- ❌ Using generic data for region-specific products
+- ❌ Storing LCA data locally without version control
+- ❌ Treating data updates as one-off events
+
+> “Consistency isn’t achieved by accident — it’s maintained by design.”
+
+---
+
+## Conclusion
+
+Reliable LCA data management is a continuous practice, not a one-time task.\
+By defining clear quality rules, automating validation, and maintaining centralized governance, companies can turn LCA data into a strategic sustainability asset.
