@@ -1,0 +1,126 @@
+---
+title: "How to Account for Recycling & Reuse in an LCA — A Practical Guide"
+description: "Step-by-step guide to modelling recycling and reuse flows in your Life Cycle Assessment (LCA) using Sustainly."
+slug: "how-to-account-recycling-reuse-in-lca"
+author: "Sustainly Team"
+published: true
+toc: true
+keywords:
+  - recycling LCA
+  - reuse LCA
+  - Life Cycle Assessment (LCA)
+  - allocation methods LCA
+  - automated LCA software
+  - Sustainly tutorial
+  - end-of-life modelling
+---
+
+Many practitioners get stuck when modelling recycling or reuse flows in an LCA — especially when raw materials come from waste streams, or when end-of-life credits (avoided burdens) are involved. With **Sustainly**, these flows can be managed clearly, consistently and in full compliance with standards. This how-to guide will walk you through modelling recycling & reuse, choosing allocation methods, and avoiding double-counting.
+
+---
+
+## 🧠 Why this topic matters
+
+Modelling recycling and reuse correctly in an LCA is critical because it influences how burdens (impacts) and benefits (credits) are assigned across product life cycles. Incorrect modelling may lead to misleading outcomes — either overstating benefits or ignoring key burdens. The complexity around waste-derived inputs, avoided burdens, and allocation methods frequently causes confusion (as seen above in the Reddit quotes).
+
+With Sustainly, you can automate much of the process while retaining full transparency and alignment with methods such as the 0:100, 50:50, or cut-off approaches.
+
+---
+
+## ✅ What you need to know: Key concepts
+
+**Recycled or Reused Input Material:** A material that would otherwise go to waste, but instead enters a new product system (for example, post-consumer content used as virgin substitute).  
+**End-of-Life (EoL) Recycling Credit / Avoided Burden:** When a product at its end-of-life displaces the production of virgin material or avoids waste treatment, some LCAs allow assigning a “credit” to that system.  
+**Allocation Methods & Cut-Off Approaches:** Methods for handling multifunctional processes (e.g., recycling, reuse, coproducts). Examples: cut-off method, allocation by substitution, 0:100 end-of-life, 50:50 approach.  
+**Double-Counting Risk:** Happens when a recycling credit is claimed twice (in two different product systems) or when burdens are omitted because of reuse. The Reddit discussion highlighted that risk. :contentReference[oaicite:2]{index=2}  
+
+---
+
+## 🛠 Step-by-step: How to model recycling/reuse in Sustainly
+
+### Step 1: Clarify your goal and scope  
+- In Sustainly, start a new project and specify the goal: Are you comparing products, generating an EPD, or assessing new use of recycled feedstock?  
+- Ask: *Is the material input from a waste stream? What happens at the end of life? Are we modelling benefits from avoided production?*  
+- Document your assumptions: “Material X is currently disposed of; in our system we use it as an input instead.”  
+
+### Step 2: Identify recycling/reuse flows  
+- In Sustainly’s data import section, mark when a material is:  
+  - Virgin feedstock  
+  - Recycled content feedstock  
+  - Waste-derived input  
+- Example: You have 30 % recycled aluminium feedstock — model that explicitly.  
+- Determine if you will include an **EoL recycling credit** (avoided load) for the product at end of life.
+
+### Step 3: Choose allocation or credit method  
+- In Sustainly’s process settings (Allocation / EoL modelling):  
+  - **Cut-Off**: The recycling benefits are attributed to the first product system; the next cycle treats recycled material as virgin.  
+  - **0:100 (Avoided Burden)**: At EoL you model the avoided virgin production as a credit in current system.  
+  - **50:50 or other split**: You split burdens/credits between systems (less common).  
+- Example from Reddit:  
+  > “Which LCI background processes should I use … 0/100 approach or the 50/50 approach for EoL?” :contentReference[oaicite:3]{index=3}  
+- Choose method consistent with your goal/scope and documented for transparency.
+
+### Step 4: Input data and link databases  
+- In Sustainly: import your foreground data (manufacture, use, transport etc.).  
+- For the recycled input: specify the source, whether it was waste, and any processing required (transport, sorting, refining).  
+- Under EoL: specify the fate of the product (landfill, recycling rate %, reuse). If you claim a credit, show what virgin production is avoided.  
+- Choose background dataset consistent with your allocation method (e.g., ecoinvent with cut-off version if using cut-off method).
+
+### Step 5: Run the model and check for consistency  
+- Click “Calculate” in Sustainly.  
+- Review hotspot dashboard: Are the recycled input flows showing lower burden than virgin input? Are EoL credits appearing correctly?  
+- Validate:  
+  - Did you avoid double-counting the credit elsewhere?  
+  - Are flows correctly scaled to your functional unit?  
+  - Are saved virgin production burdens properly accounted?
+
+### Step 6: Document your assumptions and results  
+- In the report export (PDF, EPD, etc.), include:  
+  - “Material X is 40 % recycled content from waste stream.”  
+  - “EoL recycling credit modelled using 0:100 avoided burden method; virgin aluminium production avoided.”  
+  - Any exclusions or assumptions (e.g., assumed transport 50 km to recycling facility).  
+- Transparency is essential for verification and credibility.
+
+---
+
+## 🧩 Example scenario  
+
+**Product:** A seating component made of 60 % post-consumer recycled aluminium, remainder virgin.  
+- Goal: Product LCA for marketing + EPD export.  
+- Recycled input: Specify in Sustainly the 60% material flow, include transport and remelting energy.  
+- Boundary: Cradle-to-Grave including EoL recycling with 90% recycling rate.  
+- Method: 0:100 avoided burden — at end of life the component’s aluminium is recycled and replaces virgin material elsewhere.  
+- Run model → review results: impact per functional unit (e.g., “1 seat”) shows benefit compared to all-virgin version.  
+- Export report: clearly show recycled feedstock, avoided virgin production burdens, and modelling method.
+
+---
+
+## ⚠️ Common pitfalls to avoid  
+- Claiming recycled content but ignoring transport/processing burdens of recycling.  
+- Applying an EoL credit **and** modelling virgin production burdens in next cycle → risk of double-counting.  
+- Using allocation/credit method inconsistent with your background database (e.g., cut-off dataset with avoided burden method).  
+- Not documenting the method or assumptions — leads to lack of transparency.  
+- Taking “waste input = zero burden” without justification — even waste inputs have burdens (collection, treatment, transport).  
+- Forgetting to scale recycled input flows correctly to your functional unit — can distort results.
+
+---
+
+## ❓FAQ  
+**Q: Can I use recycled content and still assign an EoL credit?**  
+A: Yes — but you must ensure your modelling method allows both and you are not double-counting. E.g., if you use recycled content now, you may still model future avoidance of virgin production at EoL, but document it clearly and ensure no credit is claimed again downstream.
+
+**Q: What if I don’t have data for waste collection/transport for recycled input?**  
+A: In Sustainly you can use proxy data from the built-in database (e.g., EU Environmental Footprint or ecoinvent). Always document the use of proxy and any assumptions.
+
+**Q: Is avoided burden method accepted in standards like EN 15804 or ISO 14044?**  
+A: Yes — but you must justify your allocation method and make it consistent with your goal & scope. Many practitioners still prefer cut-off for clarity, but avoided burden is widely used. :contentReference[oaicite:6]{index=6}
+
+---
+
+## 🌍 Conclusion  
+Recycling and reuse modelling in LCA often presents tricky questions like “how do I allocate burdens vs. credits?” or “will I double-count?” The Reddit community’s honest queries reflect this complexity.  
+With **Sustainly**, you can manage these flows confidently — choose the right allocation method, import data appropriately, run consistent modelling, and export transparent reports.  
+Start your project by defining your recycled inputs and EoL fate, select an allocation method that aligns with your goal, and let Sustainly guide you to credible, reliable results.
+
+---  
+
