@@ -15,7 +15,7 @@
         "tab": "Navigation",
         "groups": [
           {
-            "group": "ai-powered-lca",
+            "group": "Explore LCA Topics",
             "pages": [
               "ai-powered-lca/intro"
             ]
@@ -26,7 +26,7 @@
         "tab": "LCA Introduction",
         "groups": [
           {
-            "group": "lca-guideline",
+            "group": "LCA Guideline",
             "pages": [
               "lca-guideline/what-is-lca",
               "lca-guideline/lca-vs-carbon-footprint",
@@ -46,7 +46,7 @@
         "tab": "Features",
         "groups": [
           {
-            "group": "best-lca-tools",
+            "group": "2025 Best LCA Tools",
             "pages": [
               "best-lca-tools/feature-comparison",
               "best-lca-tools/lca-with-ai"
