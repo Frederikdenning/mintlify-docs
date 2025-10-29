@@ -74,6 +74,115 @@
             "pages": [
               "articles/lca-insights"
             ]
+          },
+          {
+            "group": "LCA Fundamentals",
+            "pages": [
+              "articles/lca-fundamentals/beginners-guide-run-your-first-lca",
+              "articles/lca-fundamentals/common-lca-mistakes-and-how-to-fix",
+              "articles/lca-fundamentals/corporate-lca-playbook-pilot-to-portfolio",
+              "articles/lca-fundamentals/cradle-to-gate-vs-cradle-to-grave-system-boundary",
+              "articles/lca-fundamentals/environmental-impact-categories-in-lca",
+              "articles/lca-fundamentals/foreground-vs-background-data-in-lca",
+              "articles/lca-fundamentals/system-expansion-in-lca-when-to-use",
+              "articles/lca-fundamentals/top-lca-tools-2025-buyers-guide",
+              "articles/lca-fundamentals/what-is-life-cycle-assessment-student-guide"
+            ]
+          },
+          {
+            "group": "Software Comparison",
+            "pages": [
+              "articles/software-comparison/best-lca-software-2025",
+              "articles/software-comparison/best-lca-tools-construction-building-products",
+              "articles/software-comparison/best-lca-tools-fashion-packaging-fmcg-2025",
+              "articles/software-comparison/best-lca-tools-scope-3-emissions-supply-chain",
+              "articles/software-comparison/free-vs-paid-lca-software",
+              "articles/software-comparison/how-to-choose-right-lca-tool",
+              "articles/software-comparison/sustainly-openlca-simapro-gabi-best-lca-tool-students-smes",
+              "articles/software-comparison/sustainly-vs-ecochain-fast-product-footprinting-epds",
+              "articles/software-comparison/sustainly-vs-gabi-enterprise-depth-or-student-speed"
+            ]
+          },
+          {
+            "group": "How-to Guides",
+            "pages": [
+              "articles/how-to-guides/build-packaging-lca-under-a-week",
+              "articles/how-to-guides/choose-right-functional-unit-for-lca",
+              "articles/how-to-guides/collect-primary-data-for-first-lca",
+              "articles/how-to-guides/communicate-lca-results-to-non-experts",
+              "articles/how-to-guides/how-to-account-recycling-reuse-in-lca",
+              "articles/how-to-guides/how-to-choose-functional-unit-system-boundaries-lca",
+              "articles/how-to-guides/how-to-create-lca-with-sustainly",
+              "articles/how-to-guides/integrate-ai-tools-into-lca-workflow",
+              "articles/how-to-guides/model-product-end-of-life-in-lca",
+              "articles/how-to-guides/run-product-footprint-lca",
+              "articles/how-to-guides/sustainable-idea-generation",
+              "articles/how-to-guides/turn-lca-results-into-verified-epd"
+            ]
+          },
+          {
+            "group": "AI and Digital LCA",
+            "pages": [
+              "articles/ai-and-digital-lca/all-articles",
+              "articles/ai-and-digital-lca/ai-in-sustainability-and-sustainly-ethics",
+              "articles/ai-and-digital-lca/ai-misuse-vs-perfect-fit-in-lca",
+              "articles/ai-and-digital-lca/ai-powered-lca-automated-insights",
+              "articles/ai-and-digital-lca/ai-taxonomy-unit-harmonization-lca",
+              "articles/ai-and-digital-lca/digital-transformation-for-lca-professionals",
+              "articles/ai-and-digital-lca/digital-twins-in-lca",
+              "articles/ai-and-digital-lca/how-ai-is-transforming-lca",
+              "articles/ai-and-digital-lca/how-digital-lca-platforms-save-time",
+              "articles/ai-and-digital-lca/prompt-engineering-for-lca-reliable-ai-assistance",
+              "articles/ai-and-digital-lca/top-ai-features-in-lca-tools",
+              "articles/ai-and-digital-lca/what-is-ai-powered-lca"
+            ]
+          },
+          {
+            "group": "Industry Applications",
+            "pages": [
+              "articles/industry-applications/biotech-biopharma-lca-playbook-fermentation-to-fill-finish",
+              "articles/industry-applications/carbon-hotspots-construction-lca",
+              "articles/industry-applications/construction-lca-data-gap",
+              "articles/industry-applications/electronics-lca-circular-design",
+              "articles/industry-applications/european-industries-lca-value",
+              "articles/industry-applications/fashion-lca-sustainable-startups",
+              "articles/industry-applications/food-industry-lca-sustainability",
+              "articles/industry-applications/industries-lca-value",
+              "articles/industry-applications/industries-underusing-lca",
+              "articles/industry-applications/lca-furniture-industry-automation-sustainable-design",
+              "articles/industry-applications/lca-transforming-danish-furniture-industry",
+              "articles/industry-applications/sustainability-tools-for-startups"
+            ]
+          },
+          {
+            "group": "Compliance and Regulation",
+            "pages": [
+              "articles/compliance-and-regulation/ef-3-1-compliance-checklist-align-lca-eu-environmental-footprint",
+              "articles/compliance-and-regulation/lca-compliance-to-advantage",
+              "articles/compliance-and-regulation/lca-compliance-denmark-guide",
+              "articles/compliance-and-regulation/lca-compliance-made-simple"
+            ]
+          },
+          {
+            "group": "Community",
+            "pages": [
+              "articles/community/all-articles",
+              "articles/community/building-sustainability-community-with-sustainly",
+              "articles/community/reddit-lca-community-beginner-questions-simple",
+              "articles/community/reddit-lca-community-data-quality-verification",
+              "articles/community/reddit-lca-community-questions-answers",
+              "articles/community/sustainly-community-governance-provenance"
+            ]
+          },
+          {
+            "group": "Best Practices",
+            "pages": [
+              "articles/best-practices/all-articles",
+              "articles/best-practices/best-practices-for-lcas-in-smes",
+              "articles/best-practices/lca-data-quality-best-practices",
+              "articles/best-practices/scaling-lca-best-practices",
+              "articles/best-practices/transparent-lca-reporting-best-practices"
+            ]
           }
         ]
       }
