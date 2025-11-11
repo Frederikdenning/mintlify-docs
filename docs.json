@@ -73,7 +73,12 @@
             "pages": [
               "articles/lca-insights"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Foundations & Compliance",
+        "groups": [
           {
             "group": "LCA Fundamentals",
             "pages": [
@@ -89,20 +94,19 @@
             ]
           },
           {
-            "group": "Software Comparison",
+            "group": "Compliance and Regulation",
             "pages": [
-              "articles/software-comparison/best-lca-software-2025",
-              "articles/software-comparison/best-lca-tools-construction-building-products",
-              "articles/software-comparison/best-lca-tools-fashion-packaging-fmcg-2025",
-              "articles/software-comparison/best-lca-tools-scope-3-emissions-supply-chain",
-              "articles/software-comparison/free-vs-paid-lca-software",
-              "articles/software-comparison/how-to-choose-right-lca-tool",
-              "articles/software-comparison/sustainly-openlca-simapro-gabi-best-lca-tool-students-smes",
-              "articles/software-comparison/sustainly-vs-ecochain-fast-product-footprinting-epds",
-              "articles/software-comparison/sustainly-vs-gabi-enterprise-depth-or-student-speed",
-              "articles/software-comparison/feature-comparison"
+              "articles/compliance-and-regulation/ef-3-1-compliance-checklist-align-lca-eu-environmental-footprint",
+              "articles/compliance-and-regulation/lca-compliance-to-advantage",
+              "articles/compliance-and-regulation/lca-compliance-denmark-guide",
+              "articles/compliance-and-regulation/lca-compliance-made-simple"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Guides & Best Practices",
+        "groups": [
           {
             "group": "How-to Guides",
             "pages": [
@@ -120,6 +124,20 @@
               "articles/how-to-guides/turn-lca-results-into-verified-epd"
             ]
           },
+          {
+            "group": "Best Practices",
+            "pages": [
+              "articles/best-practices/best-practices-for-lcas-in-smes",
+              "articles/best-practices/lca-data-quality-best-practices",
+              "articles/best-practices/scaling-lca-best-practices",
+              "articles/best-practices/transparent-lca-reporting-best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI, Tools & Industry",
+        "groups": [
           {
             "group": "AI and Digital LCA",
             "pages": [
@@ -179,14 +197,25 @@
             ]
           },
           {
-            "group": "Compliance and Regulation",
+            "group": "Software Comparison",
             "pages": [
-              "articles/compliance-and-regulation/ef-3-1-compliance-checklist-align-lca-eu-environmental-footprint",
-              "articles/compliance-and-regulation/lca-compliance-to-advantage",
-              "articles/compliance-and-regulation/lca-compliance-denmark-guide",
-              "articles/compliance-and-regulation/lca-compliance-made-simple"
+              "articles/software-comparison/best-lca-software-2025",
+              "articles/software-comparison/best-lca-tools-construction-building-products",
+              "articles/software-comparison/best-lca-tools-fashion-packaging-fmcg-2025",
+              "articles/software-comparison/best-lca-tools-scope-3-emissions-supply-chain",
+              "articles/software-comparison/free-vs-paid-lca-software",
+              "articles/software-comparison/how-to-choose-right-lca-tool",
+              "articles/software-comparison/sustainly-openlca-simapro-gabi-best-lca-tool-students-smes",
+              "articles/software-comparison/sustainly-vs-ecochain-fast-product-footprinting-epds",
+              "articles/software-comparison/sustainly-vs-gabi-enterprise-depth-or-student-speed",
+              "articles/software-comparison/feature-comparison"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Community & Insights",
+        "groups": [
           {
             "group": "Community",
             "pages": [
@@ -195,15 +224,6 @@
               "articles/community/reddit-lca-community-data-quality-verification",
               "articles/community/reddit-lca-community-questions-answers",
               "articles/community/sustainly-community-governance-provenance"
-            ]
-          },
-          {
-            "group": "Best Practices",
-            "pages": [
-              "articles/best-practices/best-practices-for-lcas-in-smes",
-              "articles/best-practices/lca-data-quality-best-practices",
-              "articles/best-practices/scaling-lca-best-practices",
-              "articles/best-practices/transparent-lca-reporting-best-practices"
             ]
           }
         ]
@@ -262,3 +282,4 @@
     }
   }
 }
+
