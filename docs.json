@@ -123,7 +123,6 @@
           {
             "group": "AI and Digital LCA",
             "pages": [
-              "articles/ai-and-digital-lca/all-articles",
               "articles/ai-and-digital-lca/ai-in-sustainability-and-sustainly-ethics",
               "articles/ai-and-digital-lca/ai-misuse-vs-perfect-fit-in-lca",
               "articles/ai-and-digital-lca/ai-powered-lca-automated-insights",
@@ -191,7 +190,6 @@
           {
             "group": "Community",
             "pages": [
-              "articles/community/all-articles",
               "articles/community/building-sustainability-community-with-sustainly",
               "articles/community/reddit-lca-community-beginner-questions-simple",
               "articles/community/reddit-lca-community-data-quality-verification",
@@ -202,7 +200,6 @@
           {
             "group": "Best Practices",
             "pages": [
-              "articles/best-practices/all-articles",
               "articles/best-practices/best-practices-for-lcas-in-smes",
               "articles/best-practices/lca-data-quality-best-practices",
               "articles/best-practices/scaling-lca-best-practices",
