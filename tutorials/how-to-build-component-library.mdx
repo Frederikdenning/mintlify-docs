@@ -23,7 +23,7 @@ Before we begin modeling, let’s clearly define the goal and scope. Our goal is
 - **Functional Unit:** One complete modular table with 15 years of lifespan.
 - **System Boundaries:** Cradle-to-cradle.
 
-  ![image.png](/images/image.png)
+![image.png](/images/image.png)
 
 ### **Product Scenarios to be Modeled**
 
@@ -41,6 +41,8 @@ This section outlines the precise steps for building the component library and a
 ### **1.1 Define the Component Library**
 
 First, navigate to the **Components** panel in Sustainly. Instead of modeling a "Product" directly, we will first create all the "building blocks" we need. This is our master list:
+
+![1 Pn](/images/1.png)
 
 | **Component Name**                       | **Scope** | **Functional Unit** |
 | :--------------------------------------- | :-------- | :------------------ |
@@ -62,6 +64,7 @@ A component is a "recipe" of processes. We will encapsulate this recipe once, so
 2. Name it **Table top - oak pattern** with the Functional Unit **1 item**.
 3. In the **Kanban View**, build the following A1-A3 inventory as follows:
 
+   ![2 Pn](/images/2.png)
 1. **Save** the component. You have now encapsulated the full cradle-to-gate impact of a tabletop.
 2. **Repeat** this process for the other three A1-A3 components: **Table legs - Steel**, **Table legs - Wood**, and **Table legs - Aluminum**, using their respective inventories.
 
@@ -72,6 +75,8 @@ This component will model the impact of transportation. Unlike a manufactured pa
 1. In the **Components** panel, click "**Add component**."
 2. Name it **Transport - lorry** with the Functional Unit **1 metric kg\*km**.
 3. In the **Kanban View**, build the following A4 inventory as shown in the screenshot:
+
+   ![3 Pn](/images/3.png)
 4. **Save** the component. You have now encapsulated the environmental impact for moving **1 kilogram** of goods **1 kilometer** by truck.
 
 **Repeat** this process for **Transport - shipping**, using the appropriate dataset for sea freight transportion.
@@ -83,6 +88,8 @@ This component will model the burdens (C-stages) and benefits (D-stage) of dispo
 1. In the **Components** panel, click "Add component."
 2. Name it **Eol - Aluminium** with the Functional Unit **1 kg**.
 3. In the **List View**, build the inventory for a 90% recycling, 10% incineration scenario:
+
+   ![4 Pn](/images/4.png)
 4. **Save** the component. The **negative quantity** in Module D represents the _avoided_ production of primary aluminum, giving a powerful environmental credit.
 
 **Repeat** this process for **Eol - Steel** and **Eol - Wood**, using their specific scenarios.
@@ -95,6 +102,10 @@ Now for the payoff. We will assemble a product from our new component library.
 2. Click the “Add product” button and name it **Table - Wooden top with steel legs**.
 3. In the **Kanban View**, you can add the process with the **components** we just built:
 
+   ![5 Pn](/images/5.png)
+
+   ![6 Pn](/images/6.png)
+
 Sustainly now automatically links all the complex inventories from your components to create the full life cycle.
 
 ## **3. Instant Comparison: Adding Scenarios**
@@ -105,16 +116,24 @@ Let's assume your "Table - Steel Legs" product is your baseline, **S1 - steel le
 
 1. **Create New Scenarios:** Click the scenario dropdown menu at the top of the screen (as shown in the image).
    - Type **S2 - wooden legs** and press Enter to create a new scenario. This new scenario (S2) will start as a duplicate of S1.
+
+   ![7 Pn](/images/7.png)
 2. **Refine the Model:** With **S2 - wooden legs** selected, go to the **List View**. Make the following swaps:
    - **Remove:** `Table legs - Steel`
      - **Add:** `Table legs - Wood`
    - **Remove:** `Eol - Steel legs (recycling)`
      - **Add:** `Eol - Wood legs (energy recovery)`
+
+   ![8 Pn](/images/8.png)
 3. **Action:** Repeat this process to create the aluminum version.
    - Go back to the scenario dropdown.
    - Type **S3 - Aluminium legs** and press Enter. This will also be a copy of S1.
    - In the **List View** for S3, swap out the steel components for `Table legs - Aluminum, anodized` and `Eol - Aluminium legs (recycling)`, and adjust the transport weight.
 
+   ![10 Pn](/images/10.png)
+
 ### **4. Viewing the Results**
 
 Click the **“Result view”** button. You can now select and compare all three scenarios (S1, S2, and S3) side-by-side. You have successfully created three complete, cradle-to-cradle LCAs in a fraction of the time, all by leveraging your reusable component library.
+
+![11 Pn](/images/11.png)
