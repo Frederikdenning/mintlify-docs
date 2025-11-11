@@ -48,7 +48,6 @@
           {
             "group": "2025 Best LCA Tools",
             "pages": [
-              "best-lca-tools/feature-comparison",
               "best-lca-tools/lca-with-ai"
             ]
           }
@@ -100,7 +99,8 @@
               "articles/software-comparison/how-to-choose-right-lca-tool",
               "articles/software-comparison/sustainly-openlca-simapro-gabi-best-lca-tool-students-smes",
               "articles/software-comparison/sustainly-vs-ecochain-fast-product-footprinting-epds",
-              "articles/software-comparison/sustainly-vs-gabi-enterprise-depth-or-student-speed"
+              "articles/software-comparison/sustainly-vs-gabi-enterprise-depth-or-student-speed",
+              "articles/software-comparison/feature-comparison"
             ]
           },
           {
