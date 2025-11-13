@@ -1,71 +1,110 @@
 ---
 title: "AI for Taxonomy and Unit Harmonization in LCA: Clean Messy Data in Minutes"
-description: "A practical playbook to standardize names, map processes, and fix units with AI so your LCA stays consistent and auditable."
+description: "A practical playbook to standardize names, map processes, and fix units with AI so your sustainability data stays consistent, traceable, and auditable."
 slug: "ai-lca-taxonomy-unit-harmonization"
 author: "Sustainly Team"
 published: "true"
 toc: "true"
-keywords: ["AI in LCA","data harmonization","unit conversion","Life Cycle Assessment (LCA)","automated tools","supplier data mapping","sustainable business"]
+keywords: ["AI in LCA","data harmonization","unit conversion","Life Cycle Assessment (LCA)","automated tools","supplier data mapping","sustainable business","software to measure product sustainability","sustainability analysis software for production process"]
 ---
 
-Messy spreadsheets kill LCA quality: “SS 18/8”, “stainless304”, and “steel austenitic” might be the same thing; kWh and MJ get mixed; distances arrive in miles. AI can standardize names, map to the right background datasets, and fix units in one pass—so you can focus on interpretation.
+Messy spreadsheets can quietly break sustainability accuracy. “SS 18/8”, “stainless304”, and “steel austenitic” might mean the same thing; kWh and MJ get swapped; distances appear in miles.  
+**AI can clean and standardize this chaos in minutes** — harmonizing names, mapping to the right datasets, and fixing units automatically so teams can focus on insight, not cleanup.
+
+<Info>
+  **Sustainly’s transparent AI copilot** makes taxonomy and unit harmonization fast, auditable, and scalable — keeping your sustainability data consistent across projects and teams.
+</Info>
+
+---
 
 ## What To Standardize
 
-- **Taxonomy:** material/process names → canonical terms (e.g., “stainless steel 18/8”).
-- **Units:** g→kg, miles→km, BTU→MJ, L→m³.
-- **Metadata:** region, year, technology qualifiers.
-- **Sources:** primary vs. secondary, reported vs. inferred.
-
-## 5-Step Harmonization Flow
-
-1. **Collect datasets** (BOM, utilities, transports, packaging).
-2. **Detect conflicts** (duplicate names, mixed units, missing region).
-3. **Suggest canonical terms** (AI proposes; you approve).
-4. **Map to background datasets** with region/tech fit notes.
-5. **Lock a dictionary** (golden mapping) and reapply on every import.
-
-**In Sustainly:** Importer profiles + AI-assisted mapping; unit harmonization runs automatically; you review exceptions.
-
-## Canonical Dictionary (Starter)
-
-- `stainless 18/8` → `Stainless steel, austenitic 18/8 (EU, 2024)`
-- `cardboard` → `Paperboard, recycled content 80% (EU)`
-- `truck med` → `Transport, freight, 16–32 t, EURO6 (EU)`
-
-Keep this file versioned (JSON/YAML) and reuse across projects.
-
-## Validation Checks To Enable
-
-- **Unit guardrails:** reject unknown strings; require base SI.
-- **Range checks:** kWh/unit within 0.1–20 for process X.
-- **Region gates:** EU-only datasets unless override.
-- **Completeness:** no empty A-modules when EN 15804 is on.
-
-## Handling Edge Cases
-
-- **No exact dataset match:** choose nearest tech + add uncertainty note.
-- **Mixed-year data:** normalize to study year or flag sensitivity.
-- **Supplier synonyms:** add alias list so future imports auto-map.
-
-## Audit & Traceability
-
-- Save the **mapping report** (old → new, reason, reviewer).
-- Store **unit conversions** (factor, source).
-- Keep **exceptions log** for verifier review.
-
-## FAQ
-
-**Will AI ever map wrong?** It can—review region/technology before approving.\
-**Do I need ecoinvent?** Start with EU PEF; add ecoinvent if coverage requires.\
-**How do I keep it updated?** Version the dictionary; review quarterly.
-
-## Why Use Sustainly
-
-AI mapping that learns your taxonomy, automatic unit harmonization, saved profiles per supplier, EF 3.1/IPCC/ReCiPe coverage, and EN 15804-ready exports with verifier access.
+- **Taxonomy:** unify material and process names into canonical terms (e.g., “stainless steel 18/8”).  
+- **Units:** convert and align measurement systems (g→kg, miles→km, BTU→MJ, L→m³).  
+- **Metadata:** ensure regional, temporal, and technology qualifiers are properly defined.  
+- **Sources:** differentiate between primary, secondary, reported, or inferred data.
 
 ---
 
-**Meta Title**: AI for Taxonomy and Unit Harmonization in LCA — Clean and Standardize Data Fast\
-**Meta Description**: Learn how to use AI to standardize material names, map processes, and fix unit inconsistencies in Life Cycle Assessment data — making your LCA auditable and consistent in minutes.\
-**Keywords**: ai in lca, data harmonization, unit conversion, taxonomy mapping, supplier data cleaning, lca automation, background dataset mapping, sustainly ai, ef 3.1 data quality, sustainability data standardization
+## 5-Step Harmonization Flow
+
+1. **Collect datasets** — from BOMs, utilities, transport, and packaging data.  
+2. **Detect conflicts** — find duplicates, mixed units, or missing regional data.  
+3. **Suggest canonical terms** — AI proposes matches, and you review or approve.  
+4. **Map to background datasets** — ensure regional and technological alignment.  
+5. **Lock a dictionary** — create a reusable “golden mapping” applied to future imports.
+
+**In Sustainly:** AI-assisted mapping and automated unit harmonization run instantly; you simply review exceptions to maintain full transparency and control.
+
+---
+
+## Canonical Dictionary (Starter)
+
+- `stainless 18/8` → `Stainless steel, austenitic 18/8 (EU, 2024)`  
+- `cardboard` → `Paperboard, recycled content 80% (EU)`  
+- `truck med` → `Transport, freight, 16–32 t, EURO6 (EU)`
+
+Keep this canonical dictionary versioned (JSON/YAML) and reuse it across projects for consistency.
+
+---
+
+## Validation Checks To Enable
+
+- **Unit guardrails:** reject unknown unit strings; enforce SI base units.  
+- **Range checks:** ensure plausible energy or material intensity (e.g., 0.1–20 kWh/unit).  
+- **Region gates:** restrict or flag datasets outside the target geography.  
+- **Completeness:** confirm all modules or stages are represented before assessment.
+
+---
+
+## Handling Edge Cases
+
+- **No exact dataset match:** select the nearest technology and document uncertainty.  
+- **Mixed-year data:** normalize to the study year or flag sensitivity.  
+- **Supplier synonyms:** maintain an alias list so future imports map automatically.
+
+---
+
+## Audit & Traceability
+
+- Save a **mapping report** — detailing old vs. new names, reasoning, and reviewer notes.  
+- Store **unit conversion factors** and their data sources.  
+- Maintain an **exceptions log** for verifier or auditor review.
+
+> ✅ Sustainly’s centralized data system ensures every mapping, conversion, and revision stays transparent and reusable across your organization.
+
+---
+
+## FAQ
+
+**Will AI ever map incorrectly?**  
+Occasionally — review regional and technological context before finalizing.
+
+**Do I need to manage databases manually?**  
+No. Sustainly’s AI harmonization works across standardized datasets, letting you focus on results rather than configuration.
+
+**How do I keep mappings updated?**  
+Version your dictionary and review quarterly — updates apply automatically across imports.
+
+---
+
+## Why Use Sustainly
+
+Sustainly combines **transparent AI**, **automated data harmonization**, and **centralized sustainability data management** — creating a single source of truth for all your product and supplier data.  
+
+- Automated taxonomy and unit harmonization  
+- AI-assisted mapping with traceable approval flow  
+- Reusable mapping dictionaries across departments  
+- Centralized sustainability data system  
+- Scalable workflow for both experts and newcomers  
+
+> Sustainly transforms messy spreadsheets into structured, auditable sustainability data — so your organization can move faster, stay consistent, and make confident, data-driven decisions.
+
+If you’re looking for a  
+**software to measure product sustainability**,  
+**tool to calculate environmental impact of a product**, or  
+**sustainability analysis software for production processes**,  
+
+→ [**Start with Sustainly**](https://www.sustainly.ai) and turn messy data into measurable sustainability insights.
+
+
