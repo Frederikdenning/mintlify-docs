@@ -111,6 +111,8 @@
               "guides-best-practices/how-to-guides/model-product-end-of-life-in-lca",
               "guides-best-practices/how-to-guides/run-product-footprint-lca",
               "guides-best-practices/how-to-guides/sustainable-idea-generation",
+              "guides-best-practices/how-to-guides/implement-sustainability-in-your-department",
+              "guides-best-practices/how-to-guides/implement-ai-in-sustainability-workflow",
               "guides-best-practices/how-to-guides/turn-lca-results-into-verified-epd"
             ]
           },
@@ -120,7 +122,11 @@
               "guides-best-practices/best-practices/best-practices-for-lcas-in-smes",
               "guides-best-practices/best-practices/lca-data-quality-best-practices",
               "guides-best-practices/best-practices/scaling-lca-best-practices",
-              "guides-best-practices/best-practices/transparent-lca-reporting-best-practices"
+              "guides-best-practices/best-practices/transparent-lca-reporting-best-practices",
+              "guides-best-practices/best-practices/best-practices-reusable-lca-data",
+              "guides-best-practices/best-practices/best-practices-collaborative-lca",
+              "guides-best-practices/best-practices/best-practices-lca-early-product-development",
+              "guides-best-practices/best-practices/how-to-choose-right-ai-software"
             ]
           }
         ]

@@ -8,179 +8,183 @@ toc: true
 keywords:
   - "functional unit LCA"
   - "system boundaries LCA"
-  - "Life Cycle Assessment (LCA)"
-  - "automated LCA software"
-  - "Sustainly tutorial"
+  - "data-driven sustainability"
+  - "accessible LCA for SMEs"
+  - "life cycle assessment made easy"
   - "LCA best practice"
 ---
 
-## 🧠 Why this matters
+Defining the **functional unit** and **system boundaries** is the foundation of any credible Life Cycle Assessment. These choices determine how your product is evaluated, how results scale, and whether comparisons are meaningful. For new practitioners, this step often feels abstract — but once you understand the logic, your entire workflow becomes clearer and far easier to communicate.
 
-A common question on Reddit’s [r/lifecycleassessment](https://www.reddit.com/r/lifecycleassessment) community goes something like this:
+Sustainly helps guide this process by pairing transparent AI with structured, intuitive project setup screens. This keeps decisions consistent across teams and ensures every LCA starts with a solid methodological base.
 
-> “I can’t seem to grasp anything beyond the basics of goal, scope, FU, and system boundaries.”
+---
 
-You’re not alone. Many new LCA practitioners struggle with defining the **functional unit (FU)** and **system boundaries**, and yet — these two decisions are what make or break the credibility of your assessment.
+## 🧠 Why This Matters
 
-With **Sustainly**, defining these parameters becomes intuitive, guided, and fully transparent.
+A functional unit and system boundary tell your audience two essential things:
+
+1. **What function you are assessing**, and  
+2. **How far across the lifecycle the analysis goes**.
+
+If either is vague or incomplete, the credibility of the entire assessment suffers. Clear definitions make downstream modeling easier, ensure assumptions are shared consistently across teams, and make results more comparable across products.
+
+<Callout icon="sparkles" color="#22C55E">
+Strong foundations lead to stronger insights — and a far smoother path to decisions, reporting, or verification.
+</Callout>
 
 ---
 
 ## ✅ What They Mean
 
-**Functional Unit (FU):**\
-The _reference unit_ for your study — it quantifies the function of your product or service. Every input, emission, and impact will relate to this unit.
+### **Functional Unit (FU)**  
+The FU defines *the service your product delivers*, expressed in measurable terms. All material inputs, emissions, and results are scaled to this unit.
 
-**System Boundaries:**\
-The _extent_ of your assessment — it defines which life-cycle stages (and processes) are included or excluded. Examples:
+Examples:
 
-- Cradle-to-Gate (raw materials to factory gate)
-- Cradle-to-Grave (raw materials to end-of-life)
-- Gate-to-Gate (one specific process step)
+- “1 liter of beverage delivered to the consumer”  
+- “Lighting a room for 1,000 hours”  
+- “Transporting 1 tonne of goods over 100 km”  
+
+### **System Boundaries**  
+These boundaries define *which life-cycle stages are included*. Typical options:
+
+- **Cradle-to-Gate** — raw materials to finished product  
+- **Cradle-to-Grave** — full lifecycle including use and disposal  
+- **Gate-to-Gate** — a single manufacturing step  
+- **Custom** — tailored boundaries for unique studies  
+
+<Tip>Clear boundaries help teams avoid hidden assumptions and keep comparisons fair and meaningful.</Tip>
 
 ---
 
 ## 🛠 Step-by-Step: Defining FU & Boundaries in Sustainly
 
-### Step 1: Clarify Goal & Scope
+### Step 1: Clarify Your Goal & Scope
 
-In **Sustainly**, start by creating a new project and selecting your goal: _Product LCA, EPD, or Comparison_.\
-Ask:
+Start by articulating why you are running the LCA:
 
-- What question am I trying to answer?
-- Who will use these results?
-- What decision will they support?
+- Are you comparing products?  
+- Supporting design decisions?  
+- Creating documentation for customers or procurement?  
+- Building toward an internal footprint database?
 
-> 💡 **Example:** If you’re comparing reusable vs. disposable cups, your goal is a _comparative LCA_ — your FU should reflect _the service of delivering a single drink_.
+These questions determine how broad your boundary should be and how precise your functional unit must become.
 
 ---
 
 ### Step 2: Define the Functional Unit
 
-1. Identify the product’s function (e.g., “store water,” “transport 1 ton km,” “light a room for 1000 hours”).
-2. Quantify it using measurable terms.
-3. In Sustainly: under **Project Settings → Functional Unit**, input your definition.
-4. Keep it _comparable_ — two studies can only be compared if their FUs are identical in scope and meaning.
+A strong FU follows three principles:
+
+1. **It describes the product’s core function.**  
+2. **It is quantifiable.**  
+3. **It remains consistent when comparing alternatives.**
+
+In Sustainly, you set this under **Project Settings → Functional Unit**, where AI prompts help refine vague or inconsistent definitions.
 
 <Info>
-  💡 Tip: Avoid vague units like “1 item” or “1 unit produced.” Be specific and measurable.
+Avoid generic units like “1 product.” Instead, anchor your FU to the real service your product provides.
 </Info>
 
 ---
 
 ### Step 3: Select System Boundaries
 
-Within Sustainly’s project setup, go to **System Boundary** and choose one of the templates:
+In Sustainly, choose a boundary template or define your own. Then consider which stages materially change your results:
 
-- Cradle-to-Gate
-- Cradle-to-Grave
-- Gate-to-Gate
-- Custom boundary (for specific processes)
+- Material sourcing  
+- Manufacturing steps  
+- Distribution  
+- Use-phase behaviour  
+- End-of-life pathways  
 
-Then, verify which stages matter most for your study:
+A well-structured boundary ensures your model reflects how the product is actually used in the real world.
 
-- Material extraction
-- Manufacturing
-- Transport
-- Use phase
-- End-of-life (recycling, landfill, reuse)
-
-> ⚠️ **Warning:** Excluding major life-cycle stages (e.g., use phase for energy-consuming products) can drastically bias your results.
+<Warning>
+Leaving out important stages — such as use-phase for energy-intensive products — can distort results and reduce credibility.
+</Warning>
 
 ---
 
-### Step 4: Map the Processes Inside Your Boundary
+### Step 4: Map Processes Inside the Boundary
 
-Sustainly’s AI automatically builds your process network.\
-You can:
+Once your FU and boundaries are set, Sustainly helps build the internal structure of your model:
 
-- Add or exclude manufacturing steps
-- Link datasets from **EU Environmental Footprint** or **ecoinvent**
-- Define recycling loops and allocation methods (Cut-off, Consequential, EN 15804)
+- Suggested processes based on product type  
+- Automatic grouping of materials and operations  
+- Clear visibility into what’s included or excluded  
+- Centralized sustainability data so teams work from the same assumptions  
 
-All changes update your model in real-time, so you can immediately see their impact.
+Each adjustment updates the model immediately, making it easier to see the effect of expansions, exclusions, or alternative pathways.
 
-| Feature                    | Description                              |
-| -------------------------- | ---------------------------------------- |
-| ⚡ Automated Mapping        | AI links your flows to verified datasets |
-| 🧱 Customizable Boundaries | Adjust scope at any stage                |
-| 🌍 Transparent Data        | Every inclusion/exclusion is documented  |
+| Feature                  | Description                                                 |
+| ------------------------ | ----------------------------------------------------------- |
+| ⚡ Guided Setup           | AI prompts help structure your lifecycle stages             |
+| 🧱 Customizable Scope     | Adjust boundaries at any time in the project               |
+| 🌍 Full Transparency      | Every inclusion/exclusion is recorded for reporting        |
 
 ---
 
 ### Step 5: Validate and Document
 
-When you hit “Calculate,” Sustainly runs a consistency check:
+Before generating an output, review:
 
-- Does your FU align with system boundaries?
-- Are excluded processes justified?
-- Are all flows correctly scaled to your FU?
+- Does the FU capture the real service delivered?  
+- Are boundaries justified and aligned with your goal?  
+- Are all processes scaled correctly?  
 
-Before exporting your report:
-
-- Include the FU definition (e.g., _“1 kg of product delivered and used for 5 years”_)
-- State the boundary (_“Cradle-to-Grave including raw material extraction, manufacturing, transport, use, and disposal”_)
+Sustainly’s internal checks flag inconsistencies so you can correct them before exporting results or sharing with a reviewer.
 
 <Info>
-  Sustainly automatically embeds your FU and boundary definitions into your EPD export, ensuring verifier-ready transparency.
+Sustainly automatically embeds FU and boundary definitions into your project documentation, ensuring consistency across teams.
 </Info>
 
 ---
 
-## 🧩 Example Scenario
-
-**Case:** A reusable stainless-steel bottle
+## 🧩 Example Scenario: Stainless-Steel Bottle
 
 | Step               | Choice                          | Description                                         |
-| ------------------ | ------------------------------- | --------------------------------------------------- |
-| 🎯 Functional Unit | 1 bottle delivering 500 refills | Defines service of hydration                        |
-| 🔲 Boundary        | Cradle-to-Grave                 | Includes production, use (washing), and end-of-life |
-| 🧠 Allocation      | EN 15804 Cut-off                | Accounts for recycling credit                       |
+| ------------------ | -------------------------------- | --------------------------------------------------- |
+| 🎯 Functional Unit | 1 bottle delivering 500 refills | Focuses on hydration over repeated use              |
+| 🔲 Boundary        | Cradle-to-Grave                 | Includes production, washing, and end-of-life       |
+| 🧠 Focus Area      | Durability & reuse cycles       | Highlights where circular decisions matter           |
 
-In Sustainly, you’d:
-
-1. Create a new “Product LCA” project
-2. Set FU = “1 bottle over 500 uses”
-3. Select “Cradle-to-Grave” boundary
-4. Import stainless steel data (from ecoinvent)
-5. Add a washing use-phase process
-6. Run calculation — results compare to single-use bottles instantly.
+Inside Sustainly, this setup helps compare reusable bottles with single-use alternatives on an equal basis — aligned functional units and shared boundaries make the comparison robust and decision-ready.
 
 ---
 
 ## ⚠️ Common Mistakes
 
-- Using “1 unit” as FU when products differ in size or service.
-- Forgetting to update model scaling when FU changes.
-- Ignoring use-phase or disposal stages.
-- Excluding processes without justification.
-- Failing to document assumptions in the report.
+- Using “1 unit produced” as FU when products serve different functions  
+- Forgetting to rescale flows after changing the FU  
+- Excluding major lifecycle stages without justification  
+- Applying inconsistent boundaries across comparative studies  
+- Keeping assumptions scattered across documents instead of centralized  
 
 <Warning>
-  Always justify exclusions — reviewers look for this first in LCA reports.
+Reviewers and stakeholders look for clear boundaries first — ambiguity here leads to questions later.
 </Warning>
 
 ---
 
 ## ❓ FAQ
 
-**Can I change FU after building my model?**\
-Yes. Sustainly lets you update the FU anytime — just rerun the calculation to rescale flows.
+**Can I adjust the FU later?**  
+Yes — Sustainly recalculates everything automatically once the FU changes.
 
-**What if I don’t know all lifecycle stages?**\
-Use Sustainly’s AI suggestions or proxy data from built-in databases. It highlights missing stages so your model stays credible.
+**What if I don’t know the full lifecycle?**  
+Start with a simple boundary and iterate. Sustainly highlights missing or unclear stages as you build.
 
-**Is Cradle-to-Grave always better?**\
-Not always — it depends on your study goal. A Cradle-to-Gate boundary may be enough for supplier comparisons or EPDs.
+**Is Cradle-to-Grave always the best choice?**  
+Not necessarily. The “right” boundary depends entirely on your study’s goal and decision context.
 
 ---
 
 ## 🌍 Conclusion
 
-Choosing the right **functional unit** and **system boundaries** is the foundation of every trustworthy LCA.\
-With **Sustainly**, you’re not guessing — the platform guides you with automated suggestions, transparency checks, and instant documentation.
+A well-defined functional unit and system boundary give your LCA structure, credibility, and clarity. With Sustainly’s transparent AI, centralized data, and guided setup, even beginners can establish strong foundations while experts maintain consistency across complex product lines.
 
-Start your next project with clarity:\
-Define your function, set your boundary, and let Sustainly handle the complexity.
+Begin every LCA with clarity: define the function, set the scope, and let Sustainly’s scalable workflows handle the complexity so you can focus on insight.
 
 ---
