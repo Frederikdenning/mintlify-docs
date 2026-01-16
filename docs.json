@@ -61,8 +61,8 @@
             "pages": [
               "tutorials/simple-example",
               "tutorials/four-views",
-              "tutorials/how-to-build-component-library",
-              "tutorials/how-to-build-scalable-LCA"
+              "tutorials/how-to-build-scalable-LCA",
+              "tutorials/how-to-build-component-library"
             ]
           }
         ]
